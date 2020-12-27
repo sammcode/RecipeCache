@@ -1,0 +1,1255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07898C802008C513800D7160086D59AC /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E34FD90DD02D8BE562AD10E67B409B9 /* Subtitle.swift */; };
+		0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84AA4A8F667076997CF519DCE282F2 /* TinyConstraints.swift */; };
+		105AB6387C76D40EB21ABF22657F19F0 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83F007FC5DFD7297F3E5E9EDA008E7 /* Deprecated.swift */; };
+		23090B6E3B50A20A4CDA177F88306361 /* TapActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCD0DB4AD67C0D8A87A5F057386AD0 /* TapActionRow.swift */; };
+		23C08E79767B3469BAFDC3A05EA7708E /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42763873B96E16E97FCC36EF0420B50 /* QuickTableViewController.swift */; };
+		2A7668C904625BD7143905BCB94A95EF /* DetailText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBB819ACA745F5CADD589C62151D46 /* DetailText.swift */; };
+		2E6D23173201FD8696A04F11A012F541 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628BA5579B79450939D5B870A235624 /* Configurable.swift */; };
+		30D7F3BF1038D22E5B03E4EE7F3C2482 /* RadioSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC06C847EF7A69CBD8C029F50DB54F7 /* RadioSection.swift */; };
+		3127C7327AAE7193903963FB38A297ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		36C5B65CE92BD69F2A614B83F47A9065 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188ADCE0CCFB27285A1B2574304D28AF /* Row.swift */; };
+		36C5D6BD146967C86B630B9169159FC3 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C269BE5ABFF5FB9173284290EDCF30 /* Icon.swift */; };
+		37CEE90E60B5829DCF16186684343286 /* Pods-RecipeTimer-RecipeTimerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B70041418ECF2CEA7DE602B9E0E92E /* Pods-RecipeTimer-RecipeTimerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381CEF1FBD3A743539F3D7BE3C59E5A7 /* QuickTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E403DF8B695344B86B46D7F8DC07B4D6 /* QuickTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE64FE731DFEEE92F4977F9169D85EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5DC0E68954C8AE1378E91A9F8DEC1E8A /* OptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64E8C57B5EC68CD734F06EE7CD7213 /* OptionRow.swift */; };
+		602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E17619BFE79D589CE715A70DF964D7EA /* TinyConstraints-dummy.m */; };
+		64CEA6B43C5773F4EEF9DF3C471BA05E /* Pods-RecipeTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4DAF1441B5A0200E47320459BDC00B /* Pods-RecipeTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CE5E0D615021EDC4DDE2C481F1E21F1 /* Pods-RecipeTimer-RecipeTimerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FFAF2EC3439FFF50ED43519424B52 /* Pods-RecipeTimer-RecipeTimerUITests-dummy.m */; };
+		6D01609D8B2BEBDE3CA89D8858432C83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7182C302DD02575AA83ABDEA873921CA /* Pods-RecipeTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E595325292900BE105EDF43D171BD21 /* Pods-RecipeTimer-dummy.m */; };
+		7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ACF20BFAF1FB9EF40BC2B1EE294E837 /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412E5460C5A4309814AE82831C070BF /* TinyConstraints+superview.swift */; };
+		8876C7A52DEA0E08A1D2C4FBBE7492AF /* Pods-RecipeTimerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A13738DDD5B8996A9279FF42CBDC9A0 /* Pods-RecipeTimerTests-dummy.m */; };
+		8D2C3F537A732B781836A44F71C00FFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9817C03A7C30D2160B17482798330CE6 /* RowCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068D06A324B7B6AFA69086ED9AA51C9 /* RowCompatible.swift */; };
+		9B13BF9D901FC55A9D2D9362333F6DB7 /* RowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF177BF8EF5BA177F9978DB862CEA7 /* RowStyle.swift */; };
+		B7C974C99AFE6B8C24C413D9A2ADF0FF /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9A2914C009BEFE5006F3D3A3CDD93 /* Reusable.swift */; };
+		C3D5809932973831E875B8DCFD5C3FC7 /* TapActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0692A85FC466B7C18B1EE36C5A803 /* TapActionCell.swift */; };
+		C8F5E9C6B499170CE116C3F3010DD611 /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3307E78422B54EE387A195EE7FEDFCC /* NavigationRow.swift */; };
+		CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE74CB4AECA5396F8390BD36FE7EDD /* Constraints.swift */; };
+		CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCAC38DEA5736731D983FB52B303A4 /* TinyEdgeInsets.swift */; };
+		CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3C012E4E0F3A03CCD6E2F7ED123BB0 /* Abstraction.swift */; };
+		D2BE414742211AFA83FC9E43546147FB /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA039D52BC6EA6F1931B6E432A20F7 /* SwitchCell.swift */; };
+		DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB7B4D539EAFCA60C87749F27D5F2A /* Stack.swift */; };
+		E2EDB7A3C5B1EE901D282005DDA2BC51 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99CA96A99F9DFC7C8897635CABB42A /* SwitchRow.swift */; };
+		E3266C1899A6363E8D72293C59E643B5 /* QuickTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D698DF5D347A59B41BB926939061942B /* QuickTableViewController-dummy.m */; };
+		E7EFAB336DCFCE703AF795878856196D /* Pods-RecipeTimerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6859961CBD188A94250B7105FD97D7 /* Pods-RecipeTimerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46BDE1A6E6490E13EF5668F0B257F2 /* Constrainable.swift */; };
+		F3754258FE6F52FF2DA0DD5899A16242 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5EC6BA443C4FE014A851E98E7CF5B /* Section.swift */; };
+		F89DDE2BE4B4C16826AC30BBC21ACC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19A76B41E3AF4189F817BB061DD07751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+		39418A959BF9D52DE0038905D52FB2B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7D16F6260A6FAB7F88EB5ACC56D911D;
+			remoteInfo = QuickTableViewController;
+		};
+		89062123B3CC1097BCFFC26396B5DAD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD12D0D3B12542DCCC3B1E22FC6A2019;
+			remoteInfo = "Pods-RecipeTimer";
+		};
+		B36706A7E0DA8CFFC7FB6E0B98A135A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7D16F6260A6FAB7F88EB5ACC56D911D;
+			remoteInfo = QuickTableViewController;
+		};
+		C67AC5EDF1D5F90C8FD975854F3B9015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049737FA929558C4F2FB1076A781921C /* Pods-RecipeTimerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RecipeTimerTests.modulemap"; sourceTree = "<group>"; };
+		087C6447A208E7810DAC83E66A866AED /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
+		0BC06C847EF7A69CBD8C029F50DB54F7 /* RadioSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioSection.swift; path = Source/Model/RadioSection.swift; sourceTree = "<group>"; };
+		0D208B1C793CE55F2D0DB86AB55BD441 /* Pods-RecipeTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RecipeTimer.modulemap"; sourceTree = "<group>"; };
+		1412E5460C5A4309814AE82831C070BF /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		15C269BE5ABFF5FB9173284290EDCF30 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Model/Icon.swift; sourceTree = "<group>"; };
+		188ADCE0CCFB27285A1B2574304D28AF /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Protocol/Row.swift; sourceTree = "<group>"; };
+		18C1CC755A31FFA2DAF43FB836993074 /* QuickTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickTableViewController.modulemap; sourceTree = "<group>"; };
+		1C853DCF9E628361F6392563949E7B9E /* Pods_RecipeTimer_RecipeTimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipeTimer_RecipeTimerUITests.framework; path = "Pods-RecipeTimer-RecipeTimerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECCAC38DEA5736731D983FB52B303A4 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		1FA89163971C9751850A2C3EFD313884 /* QuickTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickTableViewController.framework; path = QuickTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		214AAC601DE341E6BAE15A271378C66C /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		2454CA8925909032A427F36FB96B0FB3 /* Pods-RecipeTimer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipeTimer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A0F7E1CEC262F584C104CDEFCCEB8D3 /* Pods-RecipeTimer-RecipeTimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimer-RecipeTimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A13738DDD5B8996A9279FF42CBDC9A0 /* Pods-RecipeTimerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeTimerTests-dummy.m"; sourceTree = "<group>"; };
+		3EBB625DF87F59D4A14867D990D62541 /* Pods-RecipeTimer-RecipeTimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimer-RecipeTimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49B767B1F91D0CBF17954A8F16680632 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		4E595325292900BE105EDF43D171BD21 /* Pods-RecipeTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeTimer-dummy.m"; sourceTree = "<group>"; };
+		4E6859961CBD188A94250B7105FD97D7 /* Pods-RecipeTimerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RecipeTimerTests-umbrella.h"; sourceTree = "<group>"; };
+		54B6B3EE6C8D2AB0B5BD7B2954C9C8DA /* QuickTableViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickTableViewController-Info.plist"; sourceTree = "<group>"; };
+		5E478C9C9CF8E1E980F368A80414A276 /* Pods-RecipeTimer-RecipeTimerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipeTimer-RecipeTimerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6293074BCACCA3AC1FCD2E816DFE76CE /* Pods-RecipeTimer-RecipeTimerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RecipeTimer-RecipeTimerUITests.modulemap"; sourceTree = "<group>"; };
+		62EA039D52BC6EA6F1931B6E432A20F7 /* SwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCell.swift; path = Source/Views/SwitchCell.swift; sourceTree = "<group>"; };
+		695CAC44067B605A7CCBF634FE85F5C5 /* Pods-RecipeTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E34FD90DD02D8BE562AD10E67B409B9 /* Subtitle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subtitle.swift; path = Source/Model/Subtitle.swift; sourceTree = "<group>"; };
+		7068D06A324B7B6AFA69086ED9AA51C9 /* RowCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowCompatible.swift; path = Source/Protocol/RowCompatible.swift; sourceTree = "<group>"; };
+		72ACB10138609F70CE557C0A376B50AE /* Pods-RecipeTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		7A83F007FC5DFD7297F3E5E9EDA008E7 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Source/Model/Deprecated.swift; sourceTree = "<group>"; };
+		7E99CA96A99F9DFC7C8897635CABB42A /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		80553130F15ECC6A43B6DB58F6AB8896 /* Pods-RecipeTimerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipeTimerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85A678430F920D73451911C0B5588958 /* Pods_RecipeTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipeTimerTests.framework; path = "Pods-RecipeTimerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F65717DF1CF3FF8FB92A50BDA16E5C /* Pods-RecipeTimerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8ACF20BFAF1FB9EF40BC2B1EE294E837 /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		8AEE74CB4AECA5396F8390BD36FE7EDD /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		8B4DAF1441B5A0200E47320459BDC00B /* Pods-RecipeTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RecipeTimer-umbrella.h"; sourceTree = "<group>"; };
+		940E0ECE908C14992C21287F18438910 /* Pods-RecipeTimer-RecipeTimerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimer-RecipeTimerUITests-Info.plist"; sourceTree = "<group>"; };
+		94A3CDB740CF03256AF76FCCAE0CE1E2 /* QuickTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickTableViewController.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E64E8C57B5EC68CD734F06EE7CD7213 /* OptionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionRow.swift; path = Source/Rows/OptionRow.swift; sourceTree = "<group>"; };
+		A0D972EF5AE3401DC34B9412C7A0EB68 /* Pods-RecipeTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimer.release.xcconfig"; sourceTree = "<group>"; };
+		A87BFB56352B687F76AC6E1A21DAB04C /* QuickTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-prefix.pch"; sourceTree = "<group>"; };
+		AD616D74A5861EF221F55821CDE814B8 /* Pods_RecipeTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipeTimer.framework; path = "Pods-RecipeTimer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA5EC6BA443C4FE014A851E98E7CF5B /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Model/Section.swift; sourceTree = "<group>"; };
+		AEB11306DD7FD21E47E483240C216CEC /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		B0CCD0DB4AD67C0D8A87A5F057386AD0 /* TapActionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionRow.swift; path = Source/Rows/TapActionRow.swift; sourceTree = "<group>"; };
+		B7B70041418ECF2CEA7DE602B9E0E92E /* Pods-RecipeTimer-RecipeTimerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RecipeTimer-RecipeTimerUITests-umbrella.h"; sourceTree = "<group>"; };
+		C16FFAF2EC3439FFF50ED43519424B52 /* Pods-RecipeTimer-RecipeTimerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipeTimer-RecipeTimerUITests-dummy.m"; sourceTree = "<group>"; };
+		C1EB7B4D539EAFCA60C87749F27D5F2A /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		CB46BDE1A6E6490E13EF5668F0B257F2 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		CC3C012E4E0F3A03CCD6E2F7ED123BB0 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		D1C0692A85FC466B7C18B1EE36C5A803 /* TapActionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionCell.swift; path = Source/Views/TapActionCell.swift; sourceTree = "<group>"; };
+		D382AF74996A1E5DEF7011BB1A39CD5B /* Pods-RecipeTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipeTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3D1893F938A6C537E060F04E81DE5AF /* Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D628BA5579B79450939D5B870A235624 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Source/Protocol/Configurable.swift; sourceTree = "<group>"; };
+		D698DF5D347A59B41BB926939061942B /* QuickTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickTableViewController-dummy.m"; sourceTree = "<group>"; };
+		D6FEE29B359ABD43A36B167672D86E62 /* Pods-RecipeTimer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimer-acknowledgements.plist"; sourceTree = "<group>"; };
+		D9DF177BF8EF5BA177F9978DB862CEA7 /* RowStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowStyle.swift; path = Source/Protocol/RowStyle.swift; sourceTree = "<group>"; };
+		DDD2C5C0AB76F9500C23195015349A97 /* Pods-RecipeTimerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimerTests-Info.plist"; sourceTree = "<group>"; };
+		E17619BFE79D589CE715A70DF964D7EA /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		E261AE8E2FCFFF4D5C9E9DDA6E1D3964 /* Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3307E78422B54EE387A195EE7FEDFCC /* NavigationRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationRow.swift; path = Source/Rows/NavigationRow.swift; sourceTree = "<group>"; };
+		E403DF8B695344B86B46D7F8DC07B4D6 /* QuickTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-umbrella.h"; sourceTree = "<group>"; };
+		E42763873B96E16E97FCC36EF0420B50 /* QuickTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTableViewController.swift; path = Source/QuickTableViewController.swift; sourceTree = "<group>"; };
+		E810E85595168982BC4B1A0E08E140A0 /* Pods-RecipeTimer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipeTimer-frameworks.sh"; sourceTree = "<group>"; };
+		ECFFA029B758B83151EFFCE098477B4A /* Pods-RecipeTimer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipeTimer-Info.plist"; sourceTree = "<group>"; };
+		EDC9A2914C009BEFE5006F3D3A3CDD93 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Source/Protocol/Reusable.swift; sourceTree = "<group>"; };
+		F4CBB819ACA745F5CADD589C62151D46 /* DetailText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetailText.swift; path = Source/Model/DetailText.swift; sourceTree = "<group>"; };
+		FA84AA4A8F667076997CF519DCE282F2 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E076BAFD587367F311919703F0BB02C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D2C3F537A732B781836A44F71C00FFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89DDE2BE4B4C16826AC30BBC21ACC57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2E69F65D393E4C3AB276D92BC4E76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE64FE731DFEEE92F4977F9169D85EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD32990131E2CE8FD0086566C20F6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3127C7327AAE7193903963FB38A297ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E92942E3DBC7E26A37EE62175A9CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D01609D8B2BEBDE3CA89D8858432C83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33FFA9B2786D95EF492A23E68F425568 /* QuickTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D628BA5579B79450939D5B870A235624 /* Configurable.swift */,
+				7A83F007FC5DFD7297F3E5E9EDA008E7 /* Deprecated.swift */,
+				F4CBB819ACA745F5CADD589C62151D46 /* DetailText.swift */,
+				15C269BE5ABFF5FB9173284290EDCF30 /* Icon.swift */,
+				E3307E78422B54EE387A195EE7FEDFCC /* NavigationRow.swift */,
+				9E64E8C57B5EC68CD734F06EE7CD7213 /* OptionRow.swift */,
+				E42763873B96E16E97FCC36EF0420B50 /* QuickTableViewController.swift */,
+				0BC06C847EF7A69CBD8C029F50DB54F7 /* RadioSection.swift */,
+				EDC9A2914C009BEFE5006F3D3A3CDD93 /* Reusable.swift */,
+				188ADCE0CCFB27285A1B2574304D28AF /* Row.swift */,
+				7068D06A324B7B6AFA69086ED9AA51C9 /* RowCompatible.swift */,
+				D9DF177BF8EF5BA177F9978DB862CEA7 /* RowStyle.swift */,
+				ADA5EC6BA443C4FE014A851E98E7CF5B /* Section.swift */,
+				6E34FD90DD02D8BE562AD10E67B409B9 /* Subtitle.swift */,
+				62EA039D52BC6EA6F1931B6E432A20F7 /* SwitchCell.swift */,
+				7E99CA96A99F9DFC7C8897635CABB42A /* SwitchRow.swift */,
+				D1C0692A85FC466B7C18B1EE36C5A803 /* TapActionCell.swift */,
+				B0CCD0DB4AD67C0D8A87A5F057386AD0 /* TapActionRow.swift */,
+				FC280EBAF25AD8E3AC931B551E7AFA6F /* Support Files */,
+			);
+			name = QuickTableViewController;
+			path = QuickTableViewController;
+			sourceTree = "<group>";
+		};
+		38FA698473FC0DBC7E6E0486385378AC /* TinyConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				CC3C012E4E0F3A03CCD6E2F7ED123BB0 /* Abstraction.swift */,
+				CB46BDE1A6E6490E13EF5668F0B257F2 /* Constrainable.swift */,
+				8AEE74CB4AECA5396F8390BD36FE7EDD /* Constraints.swift */,
+				C1EB7B4D539EAFCA60C87749F27D5F2A /* Stack.swift */,
+				FA84AA4A8F667076997CF519DCE282F2 /* TinyConstraints.swift */,
+				1412E5460C5A4309814AE82831C070BF /* TinyConstraints+superview.swift */,
+				1ECCAC38DEA5736731D983FB52B303A4 /* TinyEdgeInsets.swift */,
+				DAA4E8F9FD6534B9CF79413A3F3B38B4 /* Support Files */,
+			);
+			name = TinyConstraints;
+			path = TinyConstraints;
+			sourceTree = "<group>";
+		};
+		5677493683FD1A6C8C3FA1E9D43EF29F /* Pods-RecipeTimer-RecipeTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6293074BCACCA3AC1FCD2E816DFE76CE /* Pods-RecipeTimer-RecipeTimerUITests.modulemap */,
+				D3D1893F938A6C537E060F04E81DE5AF /* Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.markdown */,
+				E261AE8E2FCFFF4D5C9E9DDA6E1D3964 /* Pods-RecipeTimer-RecipeTimerUITests-acknowledgements.plist */,
+				C16FFAF2EC3439FFF50ED43519424B52 /* Pods-RecipeTimer-RecipeTimerUITests-dummy.m */,
+				5E478C9C9CF8E1E980F368A80414A276 /* Pods-RecipeTimer-RecipeTimerUITests-frameworks.sh */,
+				940E0ECE908C14992C21287F18438910 /* Pods-RecipeTimer-RecipeTimerUITests-Info.plist */,
+				B7B70041418ECF2CEA7DE602B9E0E92E /* Pods-RecipeTimer-RecipeTimerUITests-umbrella.h */,
+				3EBB625DF87F59D4A14867D990D62541 /* Pods-RecipeTimer-RecipeTimerUITests.debug.xcconfig */,
+				3A0F7E1CEC262F584C104CDEFCCEB8D3 /* Pods-RecipeTimer-RecipeTimerUITests.release.xcconfig */,
+			);
+			name = "Pods-RecipeTimer-RecipeTimerUITests";
+			path = "Target Support Files/Pods-RecipeTimer-RecipeTimerUITests";
+			sourceTree = "<group>";
+		};
+		7AB1C1B660DD02AD84C0E4E3AE27E167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD616D74A5861EF221F55821CDE814B8 /* Pods_RecipeTimer.framework */,
+				1C853DCF9E628361F6392563949E7B9E /* Pods_RecipeTimer_RecipeTimerUITests.framework */,
+				85A678430F920D73451911C0B5588958 /* Pods_RecipeTimerTests.framework */,
+				1FA89163971C9751850A2C3EFD313884 /* QuickTableViewController.framework */,
+				248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2445FF4DC4DA6F7621E4109D99AC92 /* Pods-RecipeTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				049737FA929558C4F2FB1076A781921C /* Pods-RecipeTimerTests.modulemap */,
+				80553130F15ECC6A43B6DB58F6AB8896 /* Pods-RecipeTimerTests-acknowledgements.markdown */,
+				85F65717DF1CF3FF8FB92A50BDA16E5C /* Pods-RecipeTimerTests-acknowledgements.plist */,
+				3A13738DDD5B8996A9279FF42CBDC9A0 /* Pods-RecipeTimerTests-dummy.m */,
+				DDD2C5C0AB76F9500C23195015349A97 /* Pods-RecipeTimerTests-Info.plist */,
+				4E6859961CBD188A94250B7105FD97D7 /* Pods-RecipeTimerTests-umbrella.h */,
+				695CAC44067B605A7CCBF634FE85F5C5 /* Pods-RecipeTimerTests.debug.xcconfig */,
+				D382AF74996A1E5DEF7011BB1A39CD5B /* Pods-RecipeTimerTests.release.xcconfig */,
+			);
+			name = "Pods-RecipeTimerTests";
+			path = "Target Support Files/Pods-RecipeTimerTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E51D01C28983AE15C30CC48B97283221 /* Pods */,
+				7AB1C1B660DD02AD84C0E4E3AE27E167 /* Products */,
+				E9C875ACDA99E6A508D853649721EDA4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA4E8F9FD6534B9CF79413A3F3B38B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49B767B1F91D0CBF17954A8F16680632 /* TinyConstraints.modulemap */,
+				214AAC601DE341E6BAE15A271378C66C /* TinyConstraints.xcconfig */,
+				E17619BFE79D589CE715A70DF964D7EA /* TinyConstraints-dummy.m */,
+				087C6447A208E7810DAC83E66A866AED /* TinyConstraints-Info.plist */,
+				AEB11306DD7FD21E47E483240C216CEC /* TinyConstraints-prefix.pch */,
+				8ACF20BFAF1FB9EF40BC2B1EE294E837 /* TinyConstraints-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
+		E51D01C28983AE15C30CC48B97283221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33FFA9B2786D95EF492A23E68F425568 /* QuickTableViewController */,
+				38FA698473FC0DBC7E6E0486385378AC /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9C875ACDA99E6A508D853649721EDA4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE021876B253789D762572D52F6E8971 /* Pods-RecipeTimer */,
+				5677493683FD1A6C8C3FA1E9D43EF29F /* Pods-RecipeTimer-RecipeTimerUITests */,
+				AF2445FF4DC4DA6F7621E4109D99AC92 /* Pods-RecipeTimerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC280EBAF25AD8E3AC931B551E7AFA6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C1CC755A31FFA2DAF43FB836993074 /* QuickTableViewController.modulemap */,
+				94A3CDB740CF03256AF76FCCAE0CE1E2 /* QuickTableViewController.xcconfig */,
+				D698DF5D347A59B41BB926939061942B /* QuickTableViewController-dummy.m */,
+				54B6B3EE6C8D2AB0B5BD7B2954C9C8DA /* QuickTableViewController-Info.plist */,
+				A87BFB56352B687F76AC6E1A21DAB04C /* QuickTableViewController-prefix.pch */,
+				E403DF8B695344B86B46D7F8DC07B4D6 /* QuickTableViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QuickTableViewController";
+			sourceTree = "<group>";
+		};
+		FE021876B253789D762572D52F6E8971 /* Pods-RecipeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0D208B1C793CE55F2D0DB86AB55BD441 /* Pods-RecipeTimer.modulemap */,
+				2454CA8925909032A427F36FB96B0FB3 /* Pods-RecipeTimer-acknowledgements.markdown */,
+				D6FEE29B359ABD43A36B167672D86E62 /* Pods-RecipeTimer-acknowledgements.plist */,
+				4E595325292900BE105EDF43D171BD21 /* Pods-RecipeTimer-dummy.m */,
+				E810E85595168982BC4B1A0E08E140A0 /* Pods-RecipeTimer-frameworks.sh */,
+				ECFFA029B758B83151EFFCE098477B4A /* Pods-RecipeTimer-Info.plist */,
+				8B4DAF1441B5A0200E47320459BDC00B /* Pods-RecipeTimer-umbrella.h */,
+				72ACB10138609F70CE557C0A376B50AE /* Pods-RecipeTimer.debug.xcconfig */,
+				A0D972EF5AE3401DC34B9412C7A0EB68 /* Pods-RecipeTimer.release.xcconfig */,
+			);
+			name = "Pods-RecipeTimer";
+			path = "Target Support Files/Pods-RecipeTimer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		145B6309227A43BF60271C034545517D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CEA6B43C5773F4EEF9DF3C471BA05E /* Pods-RecipeTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4A87E9B9443A70817645C62C10D51E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EFAB336DCFCE703AF795878856196D /* Pods-RecipeTimerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDA9C4B4E9504BE951ACFA22BE44190 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CEE90E60B5829DCF16186684343286 /* Pods-RecipeTimer-RecipeTimerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25E49AE9E25B0D201845024044CA074 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381CEF1FBD3A743539F3D7BE3C59E5A7 /* QuickTableViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		103AA07209FE84CC2997B974F27A952D /* Pods-RecipeTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318D5963C560BA7D8D45F419734AAA7F /* Build configuration list for PBXNativeTarget "Pods-RecipeTimerTests" */;
+			buildPhases = (
+				1C4A87E9B9443A70817645C62C10D51E /* Headers */,
+				BB880F4BE1E9FFFB303D897DB54252E9 /* Sources */,
+				AE2E69F65D393E4C3AB276D92BC4E76A /* Frameworks */,
+				5023019DCE2E027106D24DE3178CC4DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A2E9B30052E36FA53816425647101B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-RecipeTimerTests";
+			productName = "Pods-RecipeTimerTests";
+			productReference = 85A678430F920D73451911C0B5588958 /* Pods_RecipeTimerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
+			buildPhases = (
+				98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */,
+				B22F16F1C73358E59AE260C86E3D1F1D /* Sources */,
+				36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */,
+				7465A1319E37DADA12A8BAEB409143AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD12D0D3B12542DCCC3B1E22FC6A2019 /* Pods-RecipeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F9361F868A793BAEA404AD52A35C6B /* Build configuration list for PBXNativeTarget "Pods-RecipeTimer" */;
+			buildPhases = (
+				145B6309227A43BF60271C034545517D /* Headers */,
+				89A881BD19537D1B53EF7DC5829493F6 /* Sources */,
+				2E076BAFD587367F311919703F0BB02C /* Frameworks */,
+				B009678288158385ED0CFCC3523A558B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91ED9CF26EE68C1BADE9594E5D439B54 /* PBXTargetDependency */,
+				0F0E9195C2EFD228CAA21368FADCBDCE /* PBXTargetDependency */,
+			);
+			name = "Pods-RecipeTimer";
+			productName = "Pods-RecipeTimer";
+			productReference = AD616D74A5861EF221F55821CDE814B8 /* Pods_RecipeTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3213A371361CF661DEA3979508A4C35 /* Pods-RecipeTimer-RecipeTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5EDD367E35AC28D831DDCD46F8CDFA /* Build configuration list for PBXNativeTarget "Pods-RecipeTimer-RecipeTimerUITests" */;
+			buildPhases = (
+				7EDA9C4B4E9504BE951ACFA22BE44190 /* Headers */,
+				D51857A05B28B97D8F1BD1D115ECB0FC /* Sources */,
+				CAD32990131E2CE8FD0086566C20F6D7 /* Frameworks */,
+				176566E89F17D6376135DF2AB178B400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9494086B431C5FBAAE9BA706F9F1C708 /* PBXTargetDependency */,
+				7B0687D29B704067A8FB8646753A8D26 /* PBXTargetDependency */,
+			);
+			name = "Pods-RecipeTimer-RecipeTimerUITests";
+			productName = "Pods-RecipeTimer-RecipeTimerUITests";
+			productReference = 1C853DCF9E628361F6392563949E7B9E /* Pods_RecipeTimer_RecipeTimerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7D16F6260A6FAB7F88EB5ACC56D911D /* QuickTableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C21105FD76A3321AE995685296404 /* Build configuration list for PBXNativeTarget "QuickTableViewController" */;
+			buildPhases = (
+				B25E49AE9E25B0D201845024044CA074 /* Headers */,
+				34676A869A63F434A97F71E3D003B985 /* Sources */,
+				F5E92942E3DBC7E26A37EE62175A9CBA /* Frameworks */,
+				7E7CEE97A86377B6A076621FDA2D79BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickTableViewController;
+			productName = QuickTableViewController;
+			productReference = 1FA89163971C9751850A2C3EFD313884 /* QuickTableViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7AB1C1B660DD02AD84C0E4E3AE27E167 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD12D0D3B12542DCCC3B1E22FC6A2019 /* Pods-RecipeTimer */,
+				D3213A371361CF661DEA3979508A4C35 /* Pods-RecipeTimer-RecipeTimerUITests */,
+				103AA07209FE84CC2997B974F27A952D /* Pods-RecipeTimerTests */,
+				E7D16F6260A6FAB7F88EB5ACC56D911D /* QuickTableViewController */,
+				45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		176566E89F17D6376135DF2AB178B400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5023019DCE2E027106D24DE3178CC4DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7465A1319E37DADA12A8BAEB409143AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7CEE97A86377B6A076621FDA2D79BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B009678288158385ED0CFCC3523A558B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34676A869A63F434A97F71E3D003B985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D23173201FD8696A04F11A012F541 /* Configurable.swift in Sources */,
+				105AB6387C76D40EB21ABF22657F19F0 /* Deprecated.swift in Sources */,
+				2A7668C904625BD7143905BCB94A95EF /* DetailText.swift in Sources */,
+				36C5D6BD146967C86B630B9169159FC3 /* Icon.swift in Sources */,
+				C8F5E9C6B499170CE116C3F3010DD611 /* NavigationRow.swift in Sources */,
+				5DC0E68954C8AE1378E91A9F8DEC1E8A /* OptionRow.swift in Sources */,
+				E3266C1899A6363E8D72293C59E643B5 /* QuickTableViewController-dummy.m in Sources */,
+				23C08E79767B3469BAFDC3A05EA7708E /* QuickTableViewController.swift in Sources */,
+				30D7F3BF1038D22E5B03E4EE7F3C2482 /* RadioSection.swift in Sources */,
+				B7C974C99AFE6B8C24C413D9A2ADF0FF /* Reusable.swift in Sources */,
+				36C5B65CE92BD69F2A614B83F47A9065 /* Row.swift in Sources */,
+				9817C03A7C30D2160B17482798330CE6 /* RowCompatible.swift in Sources */,
+				9B13BF9D901FC55A9D2D9362333F6DB7 /* RowStyle.swift in Sources */,
+				F3754258FE6F52FF2DA0DD5899A16242 /* Section.swift in Sources */,
+				07898C802008C513800D7160086D59AC /* Subtitle.swift in Sources */,
+				D2BE414742211AFA83FC9E43546147FB /* SwitchCell.swift in Sources */,
+				E2EDB7A3C5B1EE901D282005DDA2BC51 /* SwitchRow.swift in Sources */,
+				C3D5809932973831E875B8DCFD5C3FC7 /* TapActionCell.swift in Sources */,
+				23090B6E3B50A20A4CDA177F88306361 /* TapActionRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89A881BD19537D1B53EF7DC5829493F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7182C302DD02575AA83ABDEA873921CA /* Pods-RecipeTimer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22F16F1C73358E59AE260C86E3D1F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */,
+				EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */,
+				CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */,
+				DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */,
+				80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */,
+				602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */,
+				0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */,
+				CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB880F4BE1E9FFFB303D897DB54252E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8876C7A52DEA0E08A1D2C4FBBE7492AF /* Pods-RecipeTimerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51857A05B28B97D8F1BD1D115ECB0FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE5E0D615021EDC4DDE2C481F1E21F1 /* Pods-RecipeTimer-RecipeTimerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F0E9195C2EFD228CAA21368FADCBDCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 19A76B41E3AF4189F817BB061DD07751 /* PBXContainerItemProxy */;
+		};
+		4A2E9B30052E36FA53816425647101B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RecipeTimer";
+			target = BD12D0D3B12542DCCC3B1E22FC6A2019 /* Pods-RecipeTimer */;
+			targetProxy = 89062123B3CC1097BCFFC26396B5DAD8 /* PBXContainerItemProxy */;
+		};
+		7B0687D29B704067A8FB8646753A8D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = C67AC5EDF1D5F90C8FD975854F3B9015 /* PBXContainerItemProxy */;
+		};
+		91ED9CF26EE68C1BADE9594E5D439B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickTableViewController;
+			target = E7D16F6260A6FAB7F88EB5ACC56D911D /* QuickTableViewController */;
+			targetProxy = 39418A959BF9D52DE0038905D52FB2B6 /* PBXContainerItemProxy */;
+		};
+		9494086B431C5FBAAE9BA706F9F1C708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickTableViewController;
+			target = E7D16F6260A6FAB7F88EB5ACC56D911D /* QuickTableViewController */;
+			targetProxy = B36706A7E0DA8CFFC7FB6E0B98A135A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A69F1532F291DE4A57290AE7C8D4835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A3CDB740CF03256AF76FCCAE0CE1E2 /* QuickTableViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
+				PRODUCT_MODULE_NAME = QuickTableViewController;
+				PRODUCT_NAME = QuickTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		36C53EC39CF48718D4BBA266A0DDA5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A3CDB740CF03256AF76FCCAE0CE1E2 /* QuickTableViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
+				PRODUCT_MODULE_NAME = QuickTableViewController;
+				PRODUCT_NAME = QuickTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AC75853C1F061770BC66DBF64919314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0F7E1CEC262F584C104CDEFCCEB8D3 /* Pods-RecipeTimer-RecipeTimerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimer-RecipeTimerUITests/Pods-RecipeTimer-RecipeTimerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimer-RecipeTimerUITests/Pods-RecipeTimer-RecipeTimerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		808EA8BE922628A603EFF6A61532F38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214AAC601DE341E6BAE15A271378C66C /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		874ABAFDF96ED5E0F2A926E5516C1CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D382AF74996A1E5DEF7011BB1A39CD5B /* Pods-RecipeTimerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimerTests/Pods-RecipeTimerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimerTests/Pods-RecipeTimerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D93E436A78B6F73D3443E60D61C309A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72ACB10138609F70CE557C0A376B50AE /* Pods-RecipeTimer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimer/Pods-RecipeTimer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimer/Pods-RecipeTimer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF3FAAA2B08A2C4842B9AFB0E6AC9BE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695CAC44067B605A7CCBF634FE85F5C5 /* Pods-RecipeTimerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimerTests/Pods-RecipeTimerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimerTests/Pods-RecipeTimerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D883CD75B0DACB8FB52A6CC64A9D1CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBB625DF87F59D4A14867D990D62541 /* Pods-RecipeTimer-RecipeTimerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimer-RecipeTimerUITests/Pods-RecipeTimer-RecipeTimerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimer-RecipeTimerUITests/Pods-RecipeTimer-RecipeTimerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEFBCDE550568B133B5FDB92255A8805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D972EF5AE3401DC34B9412C7A0EB68 /* Pods-RecipeTimer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipeTimer/Pods-RecipeTimer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipeTimer/Pods-RecipeTimer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F94F9A7A89188A502D190530F866A5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214AAC601DE341E6BAE15A271378C66C /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F5EDD367E35AC28D831DDCD46F8CDFA /* Build configuration list for PBXNativeTarget "Pods-RecipeTimer-RecipeTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D883CD75B0DACB8FB52A6CC64A9D1CED /* Debug */,
+				4AC75853C1F061770BC66DBF64919314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F9361F868A793BAEA404AD52A35C6B /* Build configuration list for PBXNativeTarget "Pods-RecipeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D93E436A78B6F73D3443E60D61C309A /* Debug */,
+				DEFBCDE550568B133B5FDB92255A8805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318D5963C560BA7D8D45F419734AAA7F /* Build configuration list for PBXNativeTarget "Pods-RecipeTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3FAAA2B08A2C4842B9AFB0E6AC9BE2 /* Debug */,
+				874ABAFDF96ED5E0F2A926E5516C1CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808EA8BE922628A603EFF6A61532F38E /* Debug */,
+				F94F9A7A89188A502D190530F866A5BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C21105FD76A3321AE995685296404 /* Build configuration list for PBXNativeTarget "QuickTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A69F1532F291DE4A57290AE7C8D4835 /* Debug */,
+				36C53EC39CF48718D4BBA266A0DDA5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

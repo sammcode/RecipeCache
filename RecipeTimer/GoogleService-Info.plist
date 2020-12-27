@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>547012074273-7pal2toc0rr0mthhupcajaoo2ugu4dgv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.547012074273-7pal2toc0rr0mthhupcajaoo2ugu4dgv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUkYF_NssYdLS2_IO9S-x_a1IlLe1nIx0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>547012074273</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sammcgarry.RecipeTimer</string>
+	<key>PROJECT_ID</key>
+	<string>recipetimer</string>
+	<key>STORAGE_BUCKET</key>
+	<string>recipetimer.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:547012074273:ios:96a5e28bb7593d8cdffc60</string>
+	<key>DATABASE_URL</key>
+	<string>https://recipetimer.firebaseio.com</string>
+</dict>
+</plist>

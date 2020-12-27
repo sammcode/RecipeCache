@@ -1,0 +1,20 @@
+PODS:
+  - QuickTableViewController (1.3.1)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - QuickTableViewController
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - QuickTableViewController
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  QuickTableViewController: 25e698de1546c2b829c543d91b64ebc6e884acfc
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 91fe71f0fe6dc2965e950c6912732bf286a2d1dc
+
+COCOAPODS: 1.8.4
