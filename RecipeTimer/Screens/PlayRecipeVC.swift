@@ -122,15 +122,15 @@ class PlayRecipeVC: UIViewController {
             }else{
                 quantity = ing.qnty
             }
-            cardViewData.append(WalkthroughCardView(backview: "Ingredient \(ingCount)", title: ing.title, timer: quantity ?? "", notes: ing.notes ?? "", backviewColor: UIColor(named: "ingredient")!, backviewTitleColor: UIColor(named: "ingredient3")!, delegate: self))
+            cardViewData.append(WalkthroughCardView(backview: "Ingredient \(ingCount)", title: ing.title, timer: quantity ?? "", notes: ing.notes ?? "", backviewColor: HelpfulFunctions.colorWithGradient(frame: view.bounds, colors: [UIColor(named: "ingredient")!, UIColor(named: "ingredient2")!]), backviewTitleColor: UIColor(named: "ingredient3")!, delegate: self))
             ingCount += 1
         }
         for prep in recipe.prepSteps {
-            cardViewData.append(WalkthroughCardView(backview: "Prep Step \(prepCount)", title: prep.title, timer: "", notes: prep.notes ?? "", backviewColor: UIColor(named: "prepstep")!, backviewTitleColor: UIColor(named: "prepstep3")!, delegate: self))
+            cardViewData.append(WalkthroughCardView(backview: "Prep Step \(prepCount)", title: prep.title, timer: "", notes: prep.notes ?? "", backviewColor: HelpfulFunctions.colorWithGradient(frame: view.bounds, colors: [UIColor(named: "prepstep")!, UIColor(named: "prepstep2")!]), backviewTitleColor: UIColor(named: "prepstep3")!, delegate: self))
             prepCount += 1
         }
         for cook in recipe.cookingSteps {
-            cardViewData.append(WalkthroughCardView(backview: "Cooking Step \(cookCount)", title: cook.title, timer: cook.timeUltimatum ?? "", notes: "", backviewColor:  UIColor(named: "cookingstep")!, backviewTitleColor: UIColor(named: "cookingstep3")!, delegate: self))
+            cardViewData.append(WalkthroughCardView(backview: "Cooking Step \(cookCount)", title: cook.title, timer: cook.timeUltimatum ?? "", notes: "", backviewColor: HelpfulFunctions.colorWithGradient(frame: view.bounds, colors: [UIColor(named: "cookingstep")!, UIColor(named: "cookingstep2")!]), backviewTitleColor: UIColor(named: "cookingstep3")!, delegate: self))
             cookCount += 1
         }
     }

@@ -53,6 +53,7 @@ class RecipeListVC: UIViewController {
     weak var delegate: RecipeListVCDelegate!
     var multiplier: String?
     var addMultiplier = AddMultiplierPopUp()
+    var alertPopUp = AlertPopUp()
     var addMultiplierIsOpen = false
     
     override func viewDidLoad() {
@@ -61,10 +62,15 @@ class RecipeListVC: UIViewController {
     }
     
     @objc func buttonTapped(){
-        let playRecipeVC = PlayRecipeVC()
-        playRecipeVC.recipe = recipe
-        playRecipeVC.multiplier = multiplier
-        self.navigationController?.pushViewController(playRecipeVC, animated: true)
+        if recipe.ingredients.isEmpty && recipe.prepSteps.isEmpty && recipe.cookingSteps.isEmpty {
+            alertPopUp = AlertPopUp()
+            view.addSubview(alertPopUp)
+        } else {
+            let playRecipeVC = PlayRecipeVC()
+            playRecipeVC.recipe = recipe
+            playRecipeVC.multiplier = multiplier
+            self.navigationController?.pushViewController(playRecipeVC, animated: true)
+        }
     }
     
     @objc func editButtonTapped(){

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HelpfulFunctions {
     
@@ -39,5 +40,24 @@ class HelpfulFunctions {
         }
         print(String(resultChars))
         return [String(resultChars), String(remainingChars)]
+    }
+    
+    static func colorWithGradient(frame: CGRect, colors: [UIColor]) -> UIColor {
+        
+        // create the background layer that will hold the gradient
+        let backgroundGradientLayer = CAGradientLayer()
+        backgroundGradientLayer.frame = frame
+         
+        // we create an array of CG colors from out UIColor array
+        let cgColors = colors.map({$0.cgColor})
+        
+        backgroundGradientLayer.colors = cgColors
+        
+        UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size)
+        backgroundGradientLayer.render(in: UIGraphicsGetCurrentContext()!)
+        let backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return UIColor(patternImage: backgroundColorImage)
     }
 }

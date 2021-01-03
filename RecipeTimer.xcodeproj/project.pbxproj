@@ -19,6 +19,7 @@
 		B22C7FA724C369E700B0AC22 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C7FA624C369E700B0AC22 /* TitleLabel.swift */; };
 		B22C7FA924C36A6800B0AC22 /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C7FA824C36A6800B0AC22 /* BodyLabel.swift */; };
 		B242866B24EAED160099CC1F /* RTEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B242866A24EAED160099CC1F /* RTEmptyStateView.swift */; };
+		B246774E25A1249B00AA25FE /* AlertPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246774D25A1249B00AA25FE /* AlertPopUp.swift */; };
 		B274A12724C74F2300A009B8 /* RecipeProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274A12624C74F2300A009B8 /* RecipeProgressBarView.swift */; };
 		B274A12924CB335800A009B8 /* WalkthroughCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274A12824CB335800A009B8 /* WalkthroughCardView.swift */; };
 		B274A12B24CC828F00A009B8 /* SwipableCardViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274A12A24CC828F00A009B8 /* SwipableCardViewContainer.swift */; };
@@ -102,6 +103,7 @@
 		B22C7FA624C369E700B0AC22 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		B22C7FA824C36A6800B0AC22 /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
 		B242866A24EAED160099CC1F /* RTEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTEmptyStateView.swift; sourceTree = "<group>"; };
+		B246774D25A1249B00AA25FE /* AlertPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopUp.swift; sourceTree = "<group>"; };
 		B274A12624C74F2300A009B8 /* RecipeProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProgressBarView.swift; sourceTree = "<group>"; };
 		B274A12824CB335800A009B8 /* WalkthroughCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCardView.swift; sourceTree = "<group>"; };
 		B274A12A24CC828F00A009B8 /* SwipableCardViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableCardViewContainer.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				B2A8D8D92449DD1B008C2219 /* AddCookingStepPopUp.swift */,
 				B2A68F26248C6F0A00146B9E /* EditTitlePopUp.swift */,
 				B29E8745251296890097682D /* AddMultiplierPopUp.swift */,
+				B246774D25A1249B00AA25FE /* AlertPopUp.swift */,
 			);
 			name = PopUps;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B246774E25A1249B00AA25FE /* AlertPopUp.swift in Sources */,
 				B2F98B7624F145CC0017BB32 /* PlayPauseIndicatorView.swift in Sources */,
 				B27FA0D22464A3C100B297F3 /* NewRecipe.swift in Sources */,
 				B2A8D8D02447513F008C2219 /* UIViewExt.swift in Sources */,
