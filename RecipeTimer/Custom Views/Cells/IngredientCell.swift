@@ -23,6 +23,7 @@ class IngredientCell: UITableViewCell {
         lbl.textColor = .white
         lbl.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         lbl.textAlignment = .left
+        lbl.layer.cornerRadius = 5
         return lbl
     }()
     

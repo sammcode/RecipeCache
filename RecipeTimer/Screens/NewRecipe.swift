@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import PhotosUI
 
 protocol NewRecipeDelegate: class {
     func updateData(recipe1: Recipe, updateType: recipesArrayUpdate)
@@ -109,7 +110,7 @@ class NewRecipe: UIViewController {
         tableView.dataSource = self
     }
     
-    func chooseImage(){
+    func chooseImage(){ // Presents old UIImagePicker for devices running IOS13 or lower
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
@@ -130,6 +131,16 @@ class NewRecipe: UIViewController {
         actionSheet.popoverPresentationController?.sourceView = view
         
         self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func chooseImageIOS14(){ // Uses the new PHPicker if device is updated to IOS14
+        var config = PHPickerConfiguration()
+        config.selectionLimit = 1
+        config.filter = PHPickerFilter.images
+
+        let pickerViewController = PHPickerViewController(configuration: config)
+        pickerViewController.delegate = self
+        self.present(pickerViewController, animated: true, completion: nil)
     }
     
     func saveNewRecipe(){
@@ -235,7 +246,11 @@ extension NewRecipe: UITableViewDelegate, UITableViewDataSource, ButtonCellDeleg
             editTitle.editTitleDelegate = self
         }
         if indexPath.section == 1{
-            chooseImage()
+            if #available(iOS 14.0, *) {
+                chooseImageIOS14()
+            } else {
+                chooseImage()
+            }
         }
         if indexPath[0] == recipe1.ingredients.count + 3{
             addIngredient = AddIngredientPopUp()
@@ -473,7 +488,7 @@ extension NewRecipe: UITableViewDelegate, UITableViewDataSource, ButtonCellDeleg
     }
 }
 
-extension NewRecipe: AddIngredientDelegate, AddPrepStepDelegate, AddCookingStepDelegate, EditTitleDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension NewRecipe: AddIngredientDelegate, AddPrepStepDelegate, AddCookingStepDelegate, EditTitleDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PHPickerViewControllerDelegate{
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
@@ -485,6 +500,22 @@ extension NewRecipe: AddIngredientDelegate, AddPrepStepDelegate, AddCookingStepD
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+       picker.dismiss(animated: true, completion: nil)
+       
+       for result in results {
+          result.itemProvider.loadObject(ofClass: UIImage.self, completionHandler: { (object, error) in
+             if let image = object as? UIImage {
+                DispatchQueue.main.async {
+                    self.recipe1.image = image
+                    self.tableView.reloadData()
+                   print("Selected image: \(image)")
+                }
+             }
+          })
+       }
     }
     
     func buttonTapped3() {
