@@ -273,9 +273,12 @@ extension NewRecipe: UITableViewDelegate, UITableViewDataSource, ButtonCellDeleg
             switch pageType {
             case .edit:
                 PersistenceService.updateRecipe(recipe1: recipe1)
+                print("edit recipe called")
             case .new:
                 PersistenceService.saveNewRecipe(recipe1: recipe1)
+                print("save new recipe called")
             case .none:
+                print("RETURNED")
                 return
             }
             
@@ -509,7 +512,11 @@ extension NewRecipe: AddIngredientDelegate, AddPrepStepDelegate, AddCookingStepD
           result.itemProvider.loadObject(ofClass: UIImage.self, completionHandler: { (object, error) in
              if let image = object as? UIImage {
                 DispatchQueue.main.async {
-                    self.recipe1.image = image
+                    if let updatedImage = image.updateImageOrientionUpSide() {
+                        self.recipe1.image = updatedImage
+                    } else {
+                        self.recipe1.image = image
+                    }
                     self.tableView.reloadData()
                    print("Selected image: \(image)")
                 }

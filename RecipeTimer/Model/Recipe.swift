@@ -137,7 +137,8 @@ public class RecipeData: NSObject, NSCoding, Codable {
     }
 }
 
-public class IngredientData: NSObject, NSCoding, Codable{
+public class IngredientData: NSObject, NSSecureCoding, Codable{
+    public static var supportsSecureCoding: Bool = true
     
     public var title: String = ""
     public var qnty: String?
@@ -178,7 +179,8 @@ public class IngredientData: NSObject, NSCoding, Codable{
     }
 }
 
-public class IngredientsData: NSObject, NSCoding, Codable{
+public class IngredientsData: NSObject, NSSecureCoding, Codable{
+    public static var supportsSecureCoding: Bool = true
     
     public var ingredients: [IngredientData] = []
     
@@ -195,13 +197,17 @@ public class IngredientsData: NSObject, NSCoding, Codable{
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        let mIngredients = aDecoder.decodeObject(forKey: Key.ingredients.rawValue) as! [IngredientData]
+        NSKeyedArchiver.setClassName("RecipeTimer.IngredientsData", for: IngredientsData.self)
+        NSKeyedUnarchiver.setClass(IngredientsData.self, forClassName: "RecipeTimer.IngredientsData")
+        let mIngredients = aDecoder.decodeObject(of: [NSArray.self, IngredientData.self], forKey: Key.ingredients.rawValue) as! [IngredientData]? ?? []
         
         self.init(ingredients: mIngredients)
     }
 }
 
-public class PrepStepData: NSObject, NSCoding, Codable{
+public class PrepStepData: NSObject, NSSecureCoding, Codable{
+    public static var supportsSecureCoding: Bool = true
+    
     public var title: String = ""
     public var notes: String?
     
@@ -236,7 +242,8 @@ public class PrepStepData: NSObject, NSCoding, Codable{
     }
 }
 
-public class PrepStepsData: NSObject, NSCoding, Codable{
+public class PrepStepsData: NSObject, NSSecureCoding, Codable{
+    public static var supportsSecureCoding: Bool = true
     
     public var prepsteps: [PrepStepData] = []
     
@@ -253,13 +260,16 @@ public class PrepStepsData: NSObject, NSCoding, Codable{
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        let mPrepSteps = aDecoder.decodeObject(forKey: Key.prepsteps.rawValue) as! [PrepStepData]
+        NSKeyedArchiver.setClassName("RecipeTimer.PrepStepsData", for: PrepStepsData.self)
+        NSKeyedUnarchiver.setClass(PrepStepsData.self, forClassName: "RecipeTimer.PrepStepsData")
+        let mPrepSteps = aDecoder.decodeObject(of: [NSArray.self, PrepStepData.self], forKey: Key.prepsteps.rawValue) as! [PrepStepData]? ?? []
         
         self.init(prepsteps: mPrepSteps)
     }
 }
 
-public class CookingStepData: NSObject, NSCoding, Codable{
+public class CookingStepData: NSObject, NSSecureCoding, Codable{
+    public static var supportsSecureCoding: Bool = true
     
     public var title: String = ""
     public var timeUltimatum: String?
@@ -295,12 +305,15 @@ public class CookingStepData: NSObject, NSCoding, Codable{
     }
 }
 
-public class CookingStepsData: NSObject, NSCoding, Codable {
+public class CookingStepsData: NSObject, NSSecureCoding, Codable {
+    
+    public static var supportsSecureCoding: Bool = true
+    
     
     public var cookingsteps: [CookingStepData] = []
     
     enum Key:String{
-        case cookingsteps = "cookingstep"
+        case cookingsteps = "cookingsteps"
     }
     
     init(cookingsteps: [CookingStepData]) {
@@ -312,8 +325,64 @@ public class CookingStepsData: NSObject, NSCoding, Codable {
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        let mCookingStep = aDecoder.decodeObject(forKey: Key.cookingsteps.rawValue) as! [CookingStepData]
+        NSKeyedArchiver.setClassName("RecipeTimer.CookingStepsData", for: CookingStepsData.self)
+        NSKeyedUnarchiver.setClass(CookingStepsData.self, forClassName: "RecipeTimer.CookingStepsData")
+        let mCookingStep = aDecoder.decodeObject(of: [NSArray.self, CookingStepData.self], forKey: Key.cookingsteps.rawValue) as! [CookingStepData]? ?? []
         
         self.init(cookingsteps: mCookingStep)
+    }
+}
+
+@objc(IngredientsDataValueTransformer)
+final class IngredientsDataValueTransformer: NSSecureUnarchiveFromDataTransformer {
+
+    // The name of the transformer. This is what we will use to register the transformer `ValueTransformer.setValueTrandformer(_"forName:)`.
+    static let name = NSValueTransformerName(rawValue: String(describing: IngredientsData.self))
+
+    // Our class `Test` should in the allowed class list. (This is what the unarchiver uses to check for the right class)
+    override static var allowedTopLevelClasses: [AnyClass] {
+        return [IngredientsData.self]
+    }
+
+    /// Registers the transformer.
+    public static func register() {
+        let transformer = IngredientsDataValueTransformer()
+        ValueTransformer.setValueTransformer(transformer, forName: name)
+    }
+}
+
+@objc(PrepStepsDataValueTransformer)
+final class PrepStepsDataValueTransformer: NSSecureUnarchiveFromDataTransformer {
+
+    // The name of the transformer. This is what we will use to register the transformer `ValueTransformer.setValueTrandformer(_"forName:)`.
+    static let name = NSValueTransformerName(rawValue: String(describing: PrepStepsData.self))
+
+    // Our class `Test` should in the allowed class list. (This is what the unarchiver uses to check for the right class)
+    override static var allowedTopLevelClasses: [AnyClass] {
+        return [PrepStepsData.self]
+    }
+
+    /// Registers the transformer.
+    public static func register() {
+        let transformer = PrepStepsDataValueTransformer()
+        ValueTransformer.setValueTransformer(transformer, forName: name)
+    }
+}
+
+@objc(CookingStepsDataValueTransformer)
+final class CookingStepsDataValueTransformer: NSSecureUnarchiveFromDataTransformer {
+
+    // The name of the transformer. This is what we will use to register the transformer `ValueTransformer.setValueTrandformer(_"forName:)`.
+    static let name = NSValueTransformerName(rawValue: String(describing: CookingStepsData.self))
+
+    // Our class `Test` should in the allowed class list. (This is what the unarchiver uses to check for the right class)
+    override static var allowedTopLevelClasses: [AnyClass] {
+        return [CookingStepsData.self]
+    }
+
+    /// Registers the transformer.
+    public static func register() {
+        let transformer = CookingStepsDataValueTransformer()
+        ValueTransformer.setValueTransformer(transformer, forName: name)
     }
 }

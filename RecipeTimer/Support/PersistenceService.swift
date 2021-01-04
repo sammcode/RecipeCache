@@ -19,7 +19,9 @@ class PersistenceService {
     }
     
     static var persistentContainer: NSPersistentContainer = {
-
+        IngredientsDataValueTransformer.register()
+        PrepStepsDataValueTransformer.register()
+        CookingStepsDataValueTransformer.register()
         let container = NSPersistentContainer(name: "Data")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -88,6 +90,7 @@ class PersistenceService {
                 }
                 
                 recipes.append(Recipe(image: image, title: title, ingredients: ingredients, prepSteps: prepsteps, cookingSteps: cookingsteps, id: id, dateCreated: date))
+                
             }
         } catch {
             print("failed")

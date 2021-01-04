@@ -90,9 +90,6 @@ class HomeVC: UIViewController {
         setTableViewDelegate()
         tableView.register(RecipeCell.self, forCellReuseIdentifier: Cells.recipeCell)
         
-        
-        //tableView.addGestureRecognizer(press)
-        
         tableView.pin(to: view)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.sectionHeaderHeight = UITableView.automaticDimension
@@ -179,7 +176,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       return 370
+        let activeArray = isSearching ? filteredRecipes : recipes
+        if activeArray[indexPath.section].title.count >= 27 {
+            return 390
+        }else {
+            return 370
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

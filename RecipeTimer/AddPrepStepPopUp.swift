@@ -154,7 +154,7 @@ class AddPrepStepPopUp: UIView {
             height = ScreenSize.height * 0.45
         }else if DeviceType.isiPhone8Standard {
             width = ScreenSize.width * 0.9
-            height = ScreenSize.height * 0.6
+            height = ScreenSize.height * 0.5
         }else if DeviceType.isiPhoneSE {
             width = ScreenSize.width * 0.9
             height = ScreenSize.height * 0.6

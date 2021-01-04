@@ -158,7 +158,10 @@ class AddCookingStepPopUp: UIView {
             height = ScreenSize.height * 0.35
         }else if DeviceType.isiPhone8Standard {
             width = ScreenSize.width * 0.9
-            height = ScreenSize.height * 0.6
+            height = ScreenSize.height * 0.35
+        }else if DeviceType.isiPhoneSE {
+            width = ScreenSize.width * 0.9
+            height = ScreenSize.height * 0.45
         }else {
             width = ScreenSize.width * 0.9
             height = ScreenSize.height * 0.3

@@ -62,7 +62,7 @@ class SettingsVC: QuickTableViewController {
     
     private func openDevWebsite() -> (Row) -> Void  {
         return { [weak self] row in
-            guard let url = URL(string: "http://mcgarry.tech/") else {
+            guard let url = URL(string: "http://sammcgarry.dev") else {
                 return
             }
             let safariVC = SFSafariViewController(url: url)
