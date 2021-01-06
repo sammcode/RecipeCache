@@ -197,8 +197,6 @@ public class IngredientsData: NSObject, NSSecureCoding, Codable{
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        NSKeyedArchiver.setClassName("RecipeTimer.IngredientsData", for: IngredientsData.self)
-        NSKeyedUnarchiver.setClass(IngredientsData.self, forClassName: "RecipeTimer.IngredientsData")
         let mIngredients = aDecoder.decodeObject(of: [NSArray.self, IngredientData.self], forKey: Key.ingredients.rawValue) as! [IngredientData]? ?? []
         
         self.init(ingredients: mIngredients)
@@ -260,14 +258,13 @@ public class PrepStepsData: NSObject, NSSecureCoding, Codable{
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        NSKeyedArchiver.setClassName("RecipeTimer.PrepStepsData", for: PrepStepsData.self)
-        NSKeyedUnarchiver.setClass(PrepStepsData.self, forClassName: "RecipeTimer.PrepStepsData")
         let mPrepSteps = aDecoder.decodeObject(of: [NSArray.self, PrepStepData.self], forKey: Key.prepsteps.rawValue) as! [PrepStepData]? ?? []
         
         self.init(prepsteps: mPrepSteps)
     }
 }
 
+@objc(CookingStepData)
 public class CookingStepData: NSObject, NSSecureCoding, Codable{
     public static var supportsSecureCoding: Bool = true
     
@@ -305,6 +302,7 @@ public class CookingStepData: NSObject, NSSecureCoding, Codable{
     }
 }
 
+@objc(CookingStepsData)
 public class CookingStepsData: NSObject, NSSecureCoding, Codable {
     
     public static var supportsSecureCoding: Bool = true
@@ -325,8 +323,6 @@ public class CookingStepsData: NSObject, NSSecureCoding, Codable {
     }
     
     public required convenience init?(coder aDecoder: NSCoder) {
-        NSKeyedArchiver.setClassName("RecipeTimer.CookingStepsData", for: CookingStepsData.self)
-        NSKeyedUnarchiver.setClass(CookingStepsData.self, forClassName: "RecipeTimer.CookingStepsData")
         let mCookingStep = aDecoder.decodeObject(of: [NSArray.self, CookingStepData.self], forKey: Key.cookingsteps.rawValue) as! [CookingStepData]? ?? []
         
         self.init(cookingsteps: mCookingStep)
@@ -386,3 +382,4 @@ final class CookingStepsDataValueTransformer: NSSecureUnarchiveFromDataTransform
         ValueTransformer.setValueTransformer(transformer, forName: name)
     }
 }
+

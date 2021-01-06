@@ -47,6 +47,9 @@ class PersistenceService {
         var recipes: [Recipe] = []
         let managedContext = PersistenceService.context
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Recipes")
+        NSKeyedUnarchiver.setClass(IngredientsData.self, forClassName: "RecipeTimer.IngredientsData")
+        NSKeyedUnarchiver.setClass(PrepStepsData.self, forClassName: "RecipeTimer.PrepStepsData")
+        NSKeyedUnarchiver.setClass(CookingStepsData.self, forClassName: "RecipeTimer.CookingStepsData")
         
         do {
             
@@ -145,6 +148,10 @@ class PersistenceService {
     }
     
     static func saveNewRecipe(recipe1: Recipe){
+        NSKeyedArchiver.setClassName("RecipeTimer.IngredientsData", for: IngredientsData.self)
+        NSKeyedArchiver.setClassName("RecipeTimer.PrepStepsData", for: PrepStepsData.self)
+        NSKeyedArchiver.setClassName("CookingStepsData", for: CookingStepsData.self)
+        
         let managedObjectContext = PersistenceService.context
         let entityRecipe = NSEntityDescription.entity(forEntityName: "Recipes", in: managedObjectContext)!
         
