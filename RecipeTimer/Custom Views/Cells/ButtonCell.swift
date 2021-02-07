@@ -51,7 +51,7 @@ class ButtonCell: UITableViewCell {
             width = 250
             height = self.bounds.size.height
         }else {
-            width = 300
+            width = 250
             height = self.bounds.size.height
         }
         

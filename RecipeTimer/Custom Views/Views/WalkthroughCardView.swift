@@ -239,8 +239,7 @@ class WalkthroughCardView: UIView {
             constant = -20
         }else {
             height = ScreenSize.width * 1.25
-            constant = -50
-            print("failure")
+            constant = -40
         }
         
         backView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true

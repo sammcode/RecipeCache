@@ -21,7 +21,13 @@ class HelpfulFunctions {
             let mult = Double(multiplier)
             let num = Double(actualNumber[0])
             let result = mult! * num!
-            return String(result) + String(actualNumber[1])
+            if result - result.rounded(.towardZero) == 0 {
+                let result1 = Int(result)
+                return String(result1) + " " + String(actualNumber[1])
+            }else if actualNumber[1] == "" {
+                return String(result).trimmingCharacters(in: .whitespaces)
+            }
+            return String(result) + " " + String(actualNumber[1])
         }
     }
     
@@ -30,16 +36,16 @@ class HelpfulFunctions {
         var remainingChars: [Character] = []
         for char in quantity {
             print(char)
-            if char == "1" || char == "2" || char == "3" || char == "4" || char == "5" || char == "6" || char == "7" || char == "8" || char == "9"{
+            if char == "1" || char == "2" || char == "3" || char == "4" || char == "5" || char == "6" || char == "7" || char == "8" || char == "9" || char == "0" || char == "."{
                 resultChars.append(char)
-            }else if !resultChars.isEmpty && (char == "/" || char == ".") {
+            }else if !resultChars.isEmpty && (char == "/") {
                 return ["", ""]
             }else{
                 remainingChars.append(char)
             }
         }
         print(String(resultChars))
-        return [String(resultChars), String(remainingChars)]
+        return [String(resultChars).trimmingCharacters(in: .whitespaces), String(remainingChars).trimmingCharacters(in: .whitespaces)]
     }
     
     static func colorWithGradient(frame: CGRect, colors: [UIColor]) -> UIColor {

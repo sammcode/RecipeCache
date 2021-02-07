@@ -62,6 +62,7 @@
 		B2A8D8E0244A2A78008C2219 /* NotesTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8D8DF244A2A78008C2219 /* NotesTextView.swift */; };
 		B2A8D8E6244CCC96008C2219 /* TimePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8D8E5244CCC96008C2219 /* TimePickerTextField.swift */; };
 		B2A8D8EA244E0914008C2219 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8D8E9244E0914008C2219 /* IngredientCell.swift */; };
+		B2CBA03225D06779000FC486 /* HelpfulFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBA03125D06779000FC486 /* HelpfulFunctionsTests.swift */; };
 		B2CF0D602451FB5D00671813 /* PrepStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF0D5F2451FB5D00671813 /* PrepStepCell.swift */; };
 		B2CF0D62245218B000671813 /* CookingStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF0D61245218B000671813 /* CookingStepCell.swift */; };
 		B2CF0D6424521D1D00671813 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF0D6324521D1D00671813 /* TitleCell.swift */; };
@@ -161,6 +162,7 @@
 		B2A8D8E5244CCC96008C2219 /* TimePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerTextField.swift; sourceTree = "<group>"; };
 		B2A8D8E9244E0914008C2219 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		B2CBA01F25D065E6000FC486 /* HelpfulFunctionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpfulFunctionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CBA03125D06779000FC486 /* HelpfulFunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulFunctionsTests.swift; sourceTree = "<group>"; };
 		B2CF0D5F2451FB5D00671813 /* PrepStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepStepCell.swift; sourceTree = "<group>"; };
 		B2CF0D61245218B000671813 /* CookingStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingStepCell.swift; sourceTree = "<group>"; };
 		B2CF0D6324521D1D00671813 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				B2A8D8B024460D13008C2219 /* RecipeTimerTests.swift */,
 				B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */,
+				B2CBA03125D06779000FC486 /* HelpfulFunctionsTests.swift */,
 				B2A8D8B224460D13008C2219 /* Info.plist */,
 			);
 			path = RecipeTimerTests;
@@ -783,6 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CBA03225D06779000FC486 /* HelpfulFunctionsTests.swift in Sources */,
 				B2A8D8B124460D13008C2219 /* RecipeTimerTests.swift in Sources */,
 				B28B0F2A25CF065E00A22591 /* PersistenceServiceTests.swift in Sources */,
 			);
