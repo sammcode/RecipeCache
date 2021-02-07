@@ -30,6 +30,7 @@
 		B27FA0D4246742FF00B297F3 /* PlayRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27FA0D3246742FF00B297F3 /* PlayRecipeVC.swift */; };
 		B281FC172480188E00819D54 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281FC162480188E00819D54 /* Animations.swift */; };
 		B281FC1B24802E9200819D54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B281FC1A24802E9200819D54 /* GoogleService-Info.plist */; };
+		B28B0F2A25CF065E00A22591 /* PersistenceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */; };
 		B29E873E250E911B0097682D /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E873D250E911B0097682D /* UITableViewExt.swift */; };
 		B29E8740250E91940097682D /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E873F250E91940097682D /* UIImageViewExt.swift */; };
 		B29E8742250E91AB0097682D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8741250E91AB0097682D /* UIImageExt.swift */; };
@@ -84,6 +85,13 @@
 			remoteGlobalIDString = B2A8D89524460D08008C2219;
 			remoteInfo = RecipeTimer;
 		};
+		B2CBA02425D065E7000FC486 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2A8D88E24460D08008C2219 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2A8D89524460D08008C2219;
+			remoteInfo = RecipeTimer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +122,7 @@
 		B27FA0D3246742FF00B297F3 /* PlayRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecipeVC.swift; sourceTree = "<group>"; };
 		B281FC162480188E00819D54 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		B281FC1A24802E9200819D54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceTests.swift; sourceTree = "<group>"; };
 		B29E873D250E911B0097682D /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
 		B29E873F250E91940097682D /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		B29E8741250E91AB0097682D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
@@ -151,6 +160,7 @@
 		B2A8D8DF244A2A78008C2219 /* NotesTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTextView.swift; sourceTree = "<group>"; };
 		B2A8D8E5244CCC96008C2219 /* TimePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerTextField.swift; sourceTree = "<group>"; };
 		B2A8D8E9244E0914008C2219 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		B2CBA01F25D065E6000FC486 /* HelpfulFunctionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpfulFunctionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF0D5F2451FB5D00671813 /* PrepStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepStepCell.swift; sourceTree = "<group>"; };
 		B2CF0D61245218B000671813 /* CookingStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingStepCell.swift; sourceTree = "<group>"; };
 		B2CF0D6324521D1D00671813 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
@@ -183,6 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFBA1048BC48E0A3A957BC4 /* Pods_RecipeTimer_RecipeTimerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CBA01C25D065E6000FC486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +300,7 @@
 				B2A8D89624460D08008C2219 /* RecipeCache.app */,
 				B2A8D8AC24460D13008C2219 /* RecipeTimerTests.xctest */,
 				B2A8D8B724460D13008C2219 /* RecipeTimerUITests.xctest */,
+				B2CBA01F25D065E6000FC486 /* HelpfulFunctionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A8D8B024460D13008C2219 /* RecipeTimerTests.swift */,
+				B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */,
 				B2A8D8B224460D13008C2219 /* Info.plist */,
 			);
 			path = RecipeTimerTests;
@@ -497,13 +516,31 @@
 			productReference = B2A8D8B724460D13008C2219 /* RecipeTimerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B2CBA01E25D065E6000FC486 /* HelpfulFunctionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CBA02625D065E7000FC486 /* Build configuration list for PBXNativeTarget "HelpfulFunctionsTests" */;
+			buildPhases = (
+				B2CBA01B25D065E6000FC486 /* Sources */,
+				B2CBA01C25D065E6000FC486 /* Frameworks */,
+				B2CBA01D25D065E6000FC486 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2CBA02525D065E7000FC486 /* PBXTargetDependency */,
+			);
+			name = HelpfulFunctionsTests;
+			productName = HelpfulFunctionsTests;
+			productReference = B2CBA01F25D065E6000FC486 /* HelpfulFunctionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B2A8D88E24460D08008C2219 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Sam McGarry";
 				TargetAttributes = {
@@ -516,6 +553,10 @@
 					};
 					B2A8D8B624460D13008C2219 = {
 						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B2A8D89524460D08008C2219;
+					};
+					B2CBA01E25D065E6000FC486 = {
+						CreatedOnToolsVersion = 12.3;
 						TestTargetID = B2A8D89524460D08008C2219;
 					};
 				};
@@ -536,6 +577,7 @@
 				B2A8D89524460D08008C2219 /* RecipeTimer */,
 				B2A8D8AB24460D13008C2219 /* RecipeTimerTests */,
 				B2A8D8B624460D13008C2219 /* RecipeTimerUITests */,
+				B2CBA01E25D065E6000FC486 /* HelpfulFunctionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -560,6 +602,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B2A8D8B524460D13008C2219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CBA01D25D065E6000FC486 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,6 +784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A8D8B124460D13008C2219 /* RecipeTimerTests.swift in Sources */,
+				B28B0F2A25CF065E00A22591 /* PersistenceServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +793,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A8D8BC24460D13008C2219 /* RecipeTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CBA01B25D065E6000FC486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +815,11 @@
 			isa = PBXTargetDependency;
 			target = B2A8D89524460D08008C2219 /* RecipeTimer */;
 			targetProxy = B2A8D8B824460D13008C2219 /* PBXContainerItemProxy */;
+		};
+		B2CBA02525D065E7000FC486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2A8D89524460D08008C2219 /* RecipeTimer */;
+			targetProxy = B2CBA02425D065E7000FC486 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -910,7 +972,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.recipecache;
 				PRODUCT_NAME = RecipeCache;
 				SWIFT_VERSION = 5.0;
@@ -931,7 +993,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.recipecache;
 				PRODUCT_NAME = RecipeCache;
 				SWIFT_VERSION = 5.0;
@@ -948,7 +1010,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				INFOPLIST_FILE = RecipeTimerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -958,7 +1020,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeTimer.app/RecipeTimer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeCache.app/RecipeCache";
 			};
 			name = Debug;
 		};
@@ -971,7 +1033,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				INFOPLIST_FILE = RecipeTimerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -981,7 +1043,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeTimer.app/RecipeTimer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeCache.app/RecipeCache";
 			};
 			name = Release;
 		};
@@ -1027,6 +1089,48 @@
 			};
 			name = Release;
 		};
+		B2CBA02725D065E7000FC486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46TV4HNLFF;
+				INFOPLIST_FILE = HelpfulFunctionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.HelpfulFunctionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeCache.app/RecipeCache";
+			};
+			name = Debug;
+		};
+		B2CBA02825D065E7000FC486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46TV4HNLFF;
+				INFOPLIST_FILE = HelpfulFunctionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.HelpfulFunctionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeCache.app/RecipeCache";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1062,6 +1166,15 @@
 			buildConfigurations = (
 				B2A8D8C724460D13008C2219 /* Debug */,
 				B2A8D8C824460D13008C2219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2CBA02625D065E7000FC486 /* Build configuration list for PBXNativeTarget "HelpfulFunctionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CBA02725D065E7000FC486 /* Debug */,
+				B2CBA02825D065E7000FC486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

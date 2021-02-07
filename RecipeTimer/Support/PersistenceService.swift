@@ -12,7 +12,7 @@ import UIKit
 
 class PersistenceService {
     
-    private init() {}
+    init() {}
     
     static var context: NSManagedObjectContext {
         return persistentContainer.viewContext
@@ -126,7 +126,7 @@ class PersistenceService {
                 for ing in mIngredients.ingredients {
                     ingredients.append(ing.convertToStruct())
                 }
-                
+            
                 let mPrepSteps = data.value(forKey: "prepsteps") as! PrepStepsData
                 var prepsteps: [PrepStep] = []
                 for prep in mPrepSteps.prepsteps {
@@ -147,7 +147,8 @@ class PersistenceService {
         return recipe
     }
     
-    static func saveNewRecipe(recipe1: Recipe){
+    static func saveNewRecipe(recipe1: Recipe) {
+        
         NSKeyedArchiver.setClassName("RecipeTimer.IngredientsData", for: IngredientsData.self)
         NSKeyedArchiver.setClassName("RecipeTimer.PrepStepsData", for: PrepStepsData.self)
         NSKeyedArchiver.setClassName("CookingStepsData", for: CookingStepsData.self)
@@ -287,7 +288,6 @@ class PersistenceService {
         else { return }
       
       // 2
-        print("ABOUT TO SAVE")
         saveNewRecipe(recipe1: recipe.convertToStruct())
       
       // 3
@@ -318,3 +318,5 @@ class PersistenceService {
       }
     }
 }
+
+

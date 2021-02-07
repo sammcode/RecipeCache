@@ -505,6 +505,7 @@ extension NewRecipe: AddIngredientDelegate, AddPrepStepDelegate, AddCookingStepD
         picker.dismiss(animated: true, completion: nil)
     }
     
+    @available(iOS 14, *)
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
        picker.dismiss(animated: true, completion: nil)
        
