@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//Creates a pulsating animation on any UIView.
+//In the context of this app I use it for my custom buttons
 func pulsate(view: UIView) {
     let pulse = CASpringAnimation(keyPath: "transform.scale")
     pulse.duration = 0.4

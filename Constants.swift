@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Images used for testing purposes
 struct images {
     static let chickensoup = UIImage(named: "chickensoup")!
     static let lasagna = UIImage(named: "lasagna")!
@@ -19,6 +20,7 @@ struct images {
     static let selectImage = UIImage(named: "SelectImage")!
 }
 
+//Reusable cell identifiers
 struct Cells {
     static let recipeCell = "RecipeCell"
     static let ingredientCell = "IngredientCell"
@@ -29,6 +31,7 @@ struct Cells {
     static let buttonCell = "ButtonCell"
 }
 
+//Represents the width and height of the current device screen
 enum ScreenSize {
     static let width        = UIScreen.main.bounds.size.width
     static let height       = UIScreen.main.bounds.size.height
@@ -36,6 +39,7 @@ enum ScreenSize {
     static let minLength    = min(ScreenSize.width, ScreenSize.height)
 }
 
+//Depicts whether or not a device is of a certain type
 enum DeviceType {
     static let idiom                    = UIDevice.current.userInterfaceIdiom
     static let nativeScale              = UIScreen.main.nativeScale

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		24AB36E7BB437086DE345404 /* Pods_RecipeTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2A260116D29D9677DBF952 /* Pods_RecipeTimer.framework */; };
 		4D152B8349E919779FF524D6 /* Pods_RecipeTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DE6282FEF483A657C6DDBB /* Pods_RecipeTimerTests.framework */; };
-		B2018FFD250965F40017139D /* EncodableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018FFC250965F40017139D /* EncodableExt.swift */; };
 		B2019000252CE1C20017139D /* RCAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018FFF252CE1C10017139D /* RCAlertVC.swift */; };
 		B2019002252CE21F0017139D /* RCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2019001252CE21F0017139D /* RCAlertContainerView.swift */; };
 		B2034BEC24DB6B0C00E616DC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2034BEB24DB6B0C00E616DC /* SettingsVC.swift */; };
@@ -33,7 +32,6 @@
 		B28B0F2A25CF065E00A22591 /* PersistenceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */; };
 		B29E873E250E911B0097682D /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E873D250E911B0097682D /* UITableViewExt.swift */; };
 		B29E8742250E91AB0097682D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8741250E91AB0097682D /* UIImageExt.swift */; };
-		B29E8744250E91B90097682D /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8743250E91B90097682D /* DataExt.swift */; };
 		B29E87462512968A0097682D /* AddMultiplierPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8745251296890097682D /* AddMultiplierPopUp.swift */; };
 		B29E87482512ABAD0097682D /* MultiplierTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E87472512ABAD0097682D /* MultiplierTextField.swift */; };
 		B29E874A2512CA6B0097682D /* HelpfulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E87492512CA6B0097682D /* HelpfulFunctions.swift */; };
@@ -101,7 +99,6 @@
 		55837ABFC65DBF80C39CB190 /* Pods-RecipeTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTimerTests.release.xcconfig"; path = "Target Support Files/Pods-RecipeTimerTests/Pods-RecipeTimerTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D2A260116D29D9677DBF952 /* Pods_RecipeTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEFFB7AD97B29CCDA90C306 /* Pods-RecipeTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeTimer.release.xcconfig"; path = "Target Support Files/Pods-RecipeTimer/Pods-RecipeTimer.release.xcconfig"; sourceTree = "<group>"; };
-		B2018FFC250965F40017139D /* EncodableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExt.swift; sourceTree = "<group>"; };
 		B2018FFF252CE1C10017139D /* RCAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCAlertVC.swift; sourceTree = "<group>"; };
 		B2019001252CE21F0017139D /* RCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCAlertContainerView.swift; sourceTree = "<group>"; };
 		B2034BEB24DB6B0C00E616DC /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
@@ -125,7 +122,6 @@
 		B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceTests.swift; sourceTree = "<group>"; };
 		B29E873D250E911B0097682D /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
 		B29E8741250E91AB0097682D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
-		B29E8743250E91B90097682D /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 		B29E8745251296890097682D /* AddMultiplierPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMultiplierPopUp.swift; sourceTree = "<group>"; };
 		B29E87472512ABAD0097682D /* MultiplierTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplierTextField.swift; sourceTree = "<group>"; };
 		B29E87492512CA6B0097682D /* HelpfulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulFunctions.swift; sourceTree = "<group>"; };
@@ -391,10 +387,8 @@
 			isa = PBXGroup;
 			children = (
 				B2A8D8CF2447513F008C2219 /* UIViewExt.swift */,
-				B2018FFC250965F40017139D /* EncodableExt.swift */,
 				B29E873D250E911B0097682D /* UITableViewExt.swift */,
 				B29E8741250E91AB0097682D /* UIImageExt.swift */,
-				B29E8743250E91B90097682D /* DataExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -740,7 +734,6 @@
 				B29E87482512ABAD0097682D /* MultiplierTextField.swift in Sources */,
 				B2CF0D602451FB5D00671813 /* PrepStepCell.swift in Sources */,
 				B2A68F252485B07D00146B9E /* ButtonCell.swift in Sources */,
-				B29E8744250E91B90097682D /* DataExt.swift in Sources */,
 				B2A8D8D224475451008C2219 /* RecipeCell.swift in Sources */,
 				B2019000252CE1C20017139D /* RCAlertVC.swift in Sources */,
 				B29E87462512968A0097682D /* AddMultiplierPopUp.swift in Sources */,
@@ -767,7 +760,6 @@
 				B2A8D8DA2449DD1B008C2219 /* AddCookingStepPopUp.swift in Sources */,
 				B2A8D89C24460D08008C2219 /* SceneDelegate.swift in Sources */,
 				B2A8D8CC24474D9B008C2219 /* Recipe.swift in Sources */,
-				B2018FFD250965F40017139D /* EncodableExt.swift in Sources */,
 				B274A12B24CC828F00A009B8 /* SwipableCardViewContainer.swift in Sources */,
 				B29E874A2512CA6B0097682D /* HelpfulFunctions.swift in Sources */,
 				B2A8D8D424478E14008C2219 /* Constants.swift in Sources */,
