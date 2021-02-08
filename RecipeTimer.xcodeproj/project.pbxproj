@@ -32,7 +32,6 @@
 		B281FC1B24802E9200819D54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B281FC1A24802E9200819D54 /* GoogleService-Info.plist */; };
 		B28B0F2A25CF065E00A22591 /* PersistenceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */; };
 		B29E873E250E911B0097682D /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E873D250E911B0097682D /* UITableViewExt.swift */; };
-		B29E8740250E91940097682D /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E873F250E91940097682D /* UIImageViewExt.swift */; };
 		B29E8742250E91AB0097682D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8741250E91AB0097682D /* UIImageExt.swift */; };
 		B29E8744250E91B90097682D /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8743250E91B90097682D /* DataExt.swift */; };
 		B29E87462512968A0097682D /* AddMultiplierPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E8745251296890097682D /* AddMultiplierPopUp.swift */; };
@@ -125,7 +124,6 @@
 		B281FC1A24802E9200819D54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B28B0F2925CF065E00A22591 /* PersistenceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceTests.swift; sourceTree = "<group>"; };
 		B29E873D250E911B0097682D /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
-		B29E873F250E91940097682D /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		B29E8741250E91AB0097682D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		B29E8743250E91B90097682D /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 		B29E8745251296890097682D /* AddMultiplierPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMultiplierPopUp.swift; sourceTree = "<group>"; };
@@ -395,7 +393,6 @@
 				B2A8D8CF2447513F008C2219 /* UIViewExt.swift */,
 				B2018FFC250965F40017139D /* EncodableExt.swift */,
 				B29E873D250E911B0097682D /* UITableViewExt.swift */,
-				B29E873F250E91940097682D /* UIImageViewExt.swift */,
 				B29E8741250E91AB0097682D /* UIImageExt.swift */,
 				B29E8743250E91B90097682D /* DataExt.swift */,
 			);
@@ -764,7 +761,6 @@
 				B2A8D89A24460D08008C2219 /* AppDelegate.swift in Sources */,
 				B274A12724C74F2300A009B8 /* RecipeProgressBarView.swift in Sources */,
 				B2A8D8E6244CCC96008C2219 /* TimePickerTextField.swift in Sources */,
-				B29E8740250E91940097682D /* UIImageViewExt.swift in Sources */,
 				B22C7FA924C36A6800B0AC22 /* BodyLabel.swift in Sources */,
 				B2A68F29248C7D1700146B9E /* ImagePicker.swift in Sources */,
 				B29E873E250E911B0097682D /* UITableViewExt.swift in Sources */,

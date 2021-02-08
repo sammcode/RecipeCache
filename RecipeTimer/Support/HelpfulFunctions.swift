@@ -13,6 +13,7 @@ class HelpfulFunctions {
     
     private init() {}
     
+    //Function that takes a quantity, and a multiplier as parameters, converts them to Doubles, multiplies them, and then returns a String containing the result.
     static func applyMultiplier(quantity: String, multiplier: String) -> String {
         let actualNumber = extractDigits(quantity: quantity)
         if actualNumber[0] == ""{
@@ -31,6 +32,7 @@ class HelpfulFunctions {
         }
     }
     
+    //Function that takes a string as a parameter, extracts any numbers from it, and returns an array of strings (one being the extracted number, and the other being the remaining characters)
     static func extractDigits(quantity: String) -> [String] {
         var resultChars: [Character] = []
         var remainingChars: [Character] = []
@@ -48,13 +50,14 @@ class HelpfulFunctions {
         return [String(resultChars).trimmingCharacters(in: .whitespaces), String(remainingChars).trimmingCharacters(in: .whitespaces)]
     }
     
+    //Takes a CGRect and array of UIColors as parameters, and returns a UIColor that is gradient of the inputted array
     static func colorWithGradient(frame: CGRect, colors: [UIColor]) -> UIColor {
         
-        // create the background layer that will hold the gradient
+        //Creates the background layer that will hold the gradient
         let backgroundGradientLayer = CAGradientLayer()
         backgroundGradientLayer.frame = frame
          
-        // we create an array of CG colors from out UIColor array
+        //Creates an array of CG colors from the inputted UIColor array
         let cgColors = colors.map({$0.cgColor})
         
         backgroundGradientLayer.colors = cgColors
