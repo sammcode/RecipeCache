@@ -31,6 +31,11 @@ struct Cells {
     static let buttonCell = "ButtonCell"
 }
 
+struct ErrorMessages {
+    static let noContent = "Looks like your recipe doesn't have any content. In order to use the Walkthrough feature your recipe needs atleast one Ingredient, Prep Step, or Cooking Step. You can add these by pressing the edit button."
+    static let noRecipes = "No recipes?\nAdd one by tapping the plus button."
+}
+
 //Represents the width and height of the current device screen
 enum ScreenSize {
     static let width        = UIScreen.main.bounds.size.width

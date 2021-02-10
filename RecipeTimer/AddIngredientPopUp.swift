@@ -71,7 +71,6 @@ class AddIngredientPopUp: UIView {
     
     //Triggers button animation, and performs actions to properly update the recipe with a new ingredient
     @objc func buttonTapped(){
-        
         //Animates button
         button.pulsate()
         
@@ -220,7 +219,7 @@ class AddIngredientPopUp: UIView {
         container.widthAnchor.constraint(equalToConstant: width).isActive = true
         container.heightAnchor.constraint(equalToConstant: height).isActive = true
         
-        //Adds stack to container as a subview, constrains it to the center of the container
+        //Adds container as a subview, constrains it to the center of the popup view
         container.addSubview(stack)
         stack.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.8).isActive = true
         stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.9).isActive = true

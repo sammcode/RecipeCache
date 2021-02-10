@@ -13,9 +13,11 @@ protocol AddCookingStepDelegate {
 }
 class AddCookingStepPopUp: UIView {
     
+    //Declare variables to be used within the scopoe of the class
     var cookingStepDelegate: AddCookingStepDelegate?
     var cookingStep: CookingStep?
     
+    //Declare all UI elements to be added to the view, set their properties
     fileprivate let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -56,17 +58,27 @@ class AddCookingStepPopUp: UIView {
         return button
     }()
     
+    //Adds buttonTapped function to the button
     func addActionToButton(){
         button.addTarget(self, action: #selector(buttonTapped2), for: .touchUpInside)
     }
     
+    //Triggers button animation, and performs actions to properly update the recipe with a new cooking step
     @objc func buttonTapped2(){
+        //Animates button
         button.pulsate()
+        
+        //Create a new CookingStep struct with the updated variables
         cookingStep = CookingStep(title: addName.text!, timeUltimatum: pickTime.text!)
+        
+        //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
         cookingStepDelegate?.buttonTapped2()
+        
+        //Dismiss the popup and animate it off screen
         animateOut()
     }
     
+    //Declare stack view that will hold all the UI elements declared above
     fileprivate lazy var stack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [titleLabel, addName, pickTime, button])
         addActionToButton()
@@ -78,6 +90,7 @@ class AddCookingStepPopUp: UIView {
         return stack
     }()
     
+    //Declare the container that will hold the stack view
     fileprivate let container: UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
@@ -86,6 +99,7 @@ class AddCookingStepPopUp: UIView {
         return v
     }()
     
+    //Declare the background view for the container
     fileprivate let background: UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
@@ -93,6 +107,7 @@ class AddCookingStepPopUp: UIView {
         return v
     }()
     
+    //Animates the popup view off screen, and removes it from the super view
     @objc fileprivate func animateOut(){
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
              self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
@@ -103,6 +118,8 @@ class AddCookingStepPopUp: UIView {
             }
         }
     }
+    
+    //Animates the view on screen
     @objc fileprivate func animateIn(){
         self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
         self.alpha = 0
@@ -112,6 +129,7 @@ class AddCookingStepPopUp: UIView {
         })
     }
     
+    //Closes the keyboard and ends the editing session
     @objc func closeKeyboard(){
         self.endEditing(true)
     }
@@ -119,8 +137,13 @@ class AddCookingStepPopUp: UIView {
     override init(frame: CGRect){
         super.init(frame: frame)
         
+        //Adds gesture recognizer to the popup that calls the close keyboard function when the view is tapped
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeKeyboard)))
+        
+        //Sets the background color
         self.backgroundColor = UIColor.gray.withAlphaComponent(0.6)
+        
+        //Adjusts the frame of the popup if the device being used is an iPad
         if DeviceType.isiPadPro {
             self.frame = UIScreen.main.bounds.offsetBy(dx: -160, dy: -150)
         }else if DeviceType.isiPad11inch {
@@ -135,9 +158,11 @@ class AddCookingStepPopUp: UIView {
             self.frame = UIScreen.main.bounds
         }
         
+        //Declare constants that will be used to set the width and height of the popup
         let width: CGFloat!
         let height: CGFloat!
         
+        //Set width and height constants based on device type
         if DeviceType.isiPadPro {
             width = ScreenSize.width * 0.6
             height = ScreenSize.height * 0.2
@@ -167,24 +192,29 @@ class AddCookingStepPopUp: UIView {
             height = ScreenSize.height * 0.3
         }
         
+        //Adds background as a subview. Adds a gesture recognizer that calls the animateOut function if background view is tapped
         self.addSubview(background)
         background.pin(to: self)
         background.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
         
+        //Adds container as a subview, constrains it to the center of the popup view
         self.addSubview(container)
         container.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         container.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         container.widthAnchor.constraint(equalToConstant: width).isActive = true
         container.heightAnchor.constraint(equalToConstant: height).isActive = true
         
+        //Adds stack to container as a subview, constrains it to the center of the container
         container.addSubview(stack)
-        
         stack.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.8).isActive = true
         stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.9).isActive = true
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         
+        //After all the elements are configured, the popup view is animated on screen
         animateIn()
+        
+        //The popup view is binded to the keyboard, so it's position adjusts when the keyboard comes on screen
         self.bindToKeyboard()
     }
     

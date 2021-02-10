@@ -81,24 +81,24 @@ class SettingsVC: QuickTableViewController {
     }
 
     private func updateInAppTimer() -> (Row) -> Void {
-        return { [weak self] row in
+        return { row in
             Settings.timerStartsAutomatically = !Settings.timerStartsAutomatically
         }
     }
     
     private func updateTimerDelay(value: Int) -> (Row) -> Void {
-        return { [weak self] row in
+        return { row in
             Settings.timerDelay = value
         }
     }
     
     private func updateOrganizeRecipes(value: String) -> (Row) -> Void {
-        return { [weak self] row in
+        return { row in
             Settings.organizeRecipes = value
         }
     }
     
     private func didToggleSelection() -> (Row) -> Void {
-      return { [weak self] row in }
+      return { row in }
     }
 }
