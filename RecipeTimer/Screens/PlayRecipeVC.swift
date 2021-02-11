@@ -8,46 +8,48 @@
 
 import UIKit
 
+//Declares the protocol for PlayRecipeVC and conforms it to class
+//Creates
 protocol PlayRecipeVCDelegate : class {
     func startCountDown(time: String)
 }
 
 class PlayRecipeVC: UIViewController {
     
+    //Declare local recipe variable to be assigned data
     var recipe: Recipe = Recipe(image: images.lasagna, title: "", ingredients: [Ingredient](), prepSteps: [PrepStep](), cookingSteps: [CookingStep](), id: "", dateCreated: "")
     
+    //Declare array that stores the walkthrough card views
     var cardViewData: [WalkthroughCardView] = []
     
+    //Declare optional string that stores a multiplier if the user sets one in the previous view
     var multiplier: String?
     
+    //Declares the delegate that communicates with the walkthrough card views
     var delegate: WalkthroughCardViewDelegate!
     
+    //Declares the card view contrainer that actually displays the walkthough views
     var cardView: SwipeableCardViewContainer = {
         let cardview = SwipeableCardViewContainer()
         cardview.translatesAutoresizingMaskIntoConstraints = false
         return cardview
     }()
     
+    //Declare the view that will overlay the card view container and recognize taps
     private var tapView: UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
         return v
     }()
     
-    private var exitButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Exit", for: .normal)
-        button.layer.cornerRadius = 10
-        button.backgroundColor = UIColor.black
-        return button
-    }()
-    
+    //Declare the button that transitions to the next card view
     private var nextButton: StyleButton = {
         let button = StyleButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
+    //Declare the button that transitions to the previous card view
     private var prevButton: StyleButton = {
         let button = StyleButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -55,6 +57,7 @@ class PlayRecipeVC: UIViewController {
         return button
     }()
     
+    //Declare the stackview that holds the different progress views together
     var progressBar: UIStackView = {
         let progress = UIStackView()
         progress.translatesAutoresizingMaskIntoConstraints = false
@@ -64,6 +67,7 @@ class PlayRecipeVC: UIViewController {
         return progress
     }()
     
+    //Declare the progress view that represents the amount of ingredients in the recipe
     private var ingredientProgressBar: UIProgressView = {
         let progress = UIProgressView()
         progress.translatesAutoresizingMaskIntoConstraints = false
@@ -71,6 +75,7 @@ class PlayRecipeVC: UIViewController {
         return progress
     }()
     
+    //Declare the progress view that represents the amount of prep steps in the recipe
     private var prepstepProgressBar: UIProgressView = {
         let progress = UIProgressView()
         progress.translatesAutoresizingMaskIntoConstraints = false
@@ -78,6 +83,7 @@ class PlayRecipeVC: UIViewController {
         return progress
     }()
     
+    //Declare the progress view that represents the amount of cooking steps in the recipe
     private var cookingstepProgressBar: UIProgressView = {
         let progress = UIProgressView()
         progress.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +91,7 @@ class PlayRecipeVC: UIViewController {
         return progress
     }()
     
+    //Declare the overlay that indicates when a user had paused/played a recipe
     private var playPauseView: PlayPauseIndicatorView = {
         let ppview = PlayPauseIndicatorView(image: UIImage(systemName: "playpause.fill")!)
         ppview.translatesAutoresizingMaskIntoConstraints = false
@@ -92,12 +99,15 @@ class PlayRecipeVC: UIViewController {
         return ppview
     }()
     
+    //Declare the progress objects for ingredients, prep steps, and cooking steps
     var ingredientProgress = Progress()
     var prepstepProgress = Progress()
     var cookingstepProgress = Progress()
     
+    //Declare the timer to be used for cooking steps
     weak var timer1: Timer!
     
+    //Declare variables to be used in determining the current state of the view controller (e.g. which type of card view is being presented, whether or not a timer is active, etc.)
     private var current = 0
     private var ingredient = true
     private var prepstep = false
@@ -111,6 +121,7 @@ class PlayRecipeVC: UIViewController {
         configure()
     }
     
+    //Creates card views for the recipe's ingredients, prep steps, and cooking steps, and adds them to cardViewData array
     func fillCardViewData() {
         var ingCount = 1
         var prepCount = 1
@@ -139,7 +150,6 @@ class PlayRecipeVC: UIViewController {
         fillCardViewData()
         setUpElements()
         addActionToButton()
-        
         if multiplier != nil {
             title = recipe.title + " x " + multiplier!
         }else{
@@ -218,7 +228,6 @@ class PlayRecipeVC: UIViewController {
         }else{
             constant = ScreenSize.height * 0.19
         }
-        
         NSLayoutConstraint.activate([
             progressBar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -constant),
             progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -344,16 +353,13 @@ class PlayRecipeVC: UIViewController {
                 cookingstepProgress.completedUnitCount = Int64(1)
                 let x = Float(cookingstepProgress.fractionCompleted)
                 cookingstepProgressBar.setProgress(x, animated: true)
-                
                 return
             }
             ingredient = false
             prepstep = true
-            
             prepstepProgress.completedUnitCount = Int64(1)
             let x = Float(prepstepProgress.fractionCompleted)
             prepstepProgressBar.setProgress(x, animated: true)
-            
             return
         }
         ingredientProgress.completedUnitCount = Int64(1)
@@ -362,8 +368,6 @@ class PlayRecipeVC: UIViewController {
     }
     
     func updateProgress(direction: Direction){
-        print(current)
-        
         switch direction {
         case .forwards:
             if ingredient {
