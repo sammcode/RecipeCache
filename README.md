@@ -9,4 +9,4 @@ able to delay the start of a timer for a cooking step. The UI also supports dark
 
 An update is coming soon that will allow you to share recipes on social media and send them via iMessage.
 
-You can check out screenshots and read more about the app on my website, [here](sammcgarry.dev/projects/recipecache).
+You can check out screenshots and read more about the app on my website, [here](https://www.sammcgarry.dev/projects/recipecache).
