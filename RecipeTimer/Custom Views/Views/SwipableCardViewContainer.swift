@@ -165,7 +165,6 @@ class SwipeableCardViewContainer: UIView {
         guard let dataSource = dataSource else {
             return
         }
-        print("previous without removing called")
         
         let newIndex = previousCards
         

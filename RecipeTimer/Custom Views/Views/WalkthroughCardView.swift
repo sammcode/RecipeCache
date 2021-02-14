@@ -25,12 +25,6 @@ protocol WalkthroughCardViewDataSource: class {
     /// - Parameter index: index of the card to be displayed
     /// - Returns: card view to display
     func card(forItemAtIndex index: Int) -> WalkthroughCardView
-
-    /// Provides a View to be displayed underneath all of the
-    /// cards when all cards have been swiped away.
-    ///
-    /// - Returns: view to be displayed underneath all cards
-    func viewForEmptyCards() -> UIView?
 }
 
 protocol WalkthroughCardViewDelegate: class {
