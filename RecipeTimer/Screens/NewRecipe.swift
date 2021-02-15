@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import PhotosUI
 
+
 protocol NewRecipeDelegate: class {
     func updateData(recipe1: Recipe, updateType: recipesArrayUpdate)
 }

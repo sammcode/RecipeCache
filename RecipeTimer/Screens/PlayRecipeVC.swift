@@ -9,7 +9,6 @@
 import UIKit
 
 //Declares the protocol for PlayRecipeVC and conforms it to class
-//Creates
 protocol PlayRecipeVCDelegate : class {
     func startCountDown(time: String)
 }
