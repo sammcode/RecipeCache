@@ -394,7 +394,9 @@ class PlayRecipeVC: UIViewController {
         
         //Checks if the current recipe step type is cooking step and if there is a timer set, if so it starts the count down
         if cookingstep && recipe.cookingSteps[current].timeUltimatum != nil && Settings.timerStartsAutomatically{
-            delegate.startCountDown(card: cardViewData[progressCount])
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(Settings.timerDelay)){ [weak self] in
+                self!.delegate.startCountDown(card: self!.cardViewData[self!.progressCount])
+            }
         }
     }
     

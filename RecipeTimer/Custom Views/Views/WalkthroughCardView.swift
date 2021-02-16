@@ -9,21 +9,7 @@
 import UIKit
 
 protocol WalkthroughCardViewDataSource: class {
-
-    /// Determines the number of cards to be added into the
-    /// SwipeableCardViewContainer. Not all cards will initially
-    /// be visible, but as cards are swiped away new cards will
-    /// appear until this number of cards is reached.
-    ///
-    /// - Returns: total number of cards to be shown
     func numberOfCards() -> Int
-
-    /// Provides the Card View to be displayed within the
-    /// SwipeableCardViewContainer. This view's frame will
-    /// be updated depending on its current index within the stack.
-    ///
-    /// - Parameter index: index of the card to be displayed
-    /// - Returns: card view to display
     func card(forItemAtIndex index: Int) -> WalkthroughCardView
 }
 
@@ -202,8 +188,6 @@ class WalkthroughCardView: UIView {
     
     func setUpBackViewConstraints(){
         addSubview(backView)
-        
-        //let height = DeviceType.isiPhone8Standard || DeviceType.isiPhone8PlusStandard ? ScreenSize.width * 0.9 : ScreenSize.width * 1.25
         
         let height: CGFloat!
         let constant: CGFloat!

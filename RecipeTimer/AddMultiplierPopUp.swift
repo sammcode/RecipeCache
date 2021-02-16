@@ -111,7 +111,7 @@ class AddMultiplierPopUp: UIView {
         button.pulsate()
         
         //Declares variables to be used in creating new Ingredient
-        multiplier = addMultiplier.text!
+        multiplier = addMultiplier.text ?? ""
         
         //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
         addMultiplierPopUpDelegate?.buttonTapped4()
