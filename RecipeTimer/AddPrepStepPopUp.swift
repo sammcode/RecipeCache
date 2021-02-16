@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AddPrepStepDelegate {
-    func buttonTapped1()
+    func addPrepStepButtonTapped()
 }
 
 class AddPrepStepPopUp: UIView {
@@ -52,11 +52,11 @@ class AddPrepStepPopUp: UIView {
     
     //Adds buttonTapped function to the button
     func addActionToButton(){
-        button.addTarget(self, action: #selector(buttonTapped1), for: .touchUpInside)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
     //Triggers button animation, and performs actions to properly update the recipe with a new prep step
-    @objc func buttonTapped1(){
+    @objc func buttonTapped(){
         //Animates button
         button.pulsate()
         
@@ -72,7 +72,7 @@ class AddPrepStepPopUp: UIView {
         prepStep = PrepStep(title: addName.text!, notes: notes)
         
         //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
-        addPrepStepDelegate?.buttonTapped1()
+        addPrepStepDelegate?.addPrepStepButtonTapped()
         
         //Dismiss the popup and animate it off screen
         animateOut()

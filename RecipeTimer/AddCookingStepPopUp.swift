@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AddCookingStepDelegate {
-    func buttonTapped2()
+    func addCookingStepButtonTapped()
 }
 class AddCookingStepPopUp: UIView {
     
@@ -60,11 +60,11 @@ class AddCookingStepPopUp: UIView {
     
     //Adds buttonTapped function to the button
     func addActionToButton(){
-        button.addTarget(self, action: #selector(buttonTapped2), for: .touchUpInside)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
     //Triggers button animation, and performs actions to properly update the recipe with a new cooking step
-    @objc func buttonTapped2(){
+    @objc func buttonTapped(){
         //Animates button
         button.pulsate()
         
@@ -72,7 +72,7 @@ class AddCookingStepPopUp: UIView {
         cookingStep = CookingStep(title: addName.text!, timeUltimatum: pickTime.text!)
         
         //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
-        cookingStepDelegate?.buttonTapped2()
+        cookingStepDelegate?.addCookingStepButtonTapped()
         
         //Dismiss the popup and animate it off screen
         animateOut()

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol EditTitleDelegate {
-    func buttonTapped3()
+    func editTitleButtonTapped()
 }
 
 class EditTitlePopUp: UIView {
@@ -109,7 +109,7 @@ class EditTitlePopUp: UIView {
         title = addName.text
         
         //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
-        editTitleDelegate?.buttonTapped3()
+        editTitleDelegate?.editTitleButtonTapped()
         
         //Dismiss the popup and animate it off screen
         animateOut()

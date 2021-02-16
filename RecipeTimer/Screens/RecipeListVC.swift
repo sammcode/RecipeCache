@@ -161,7 +161,7 @@ extension RecipeListVC: UITableViewDelegate, UITableViewDataSource{
         return headerView
     }
     
-    //
+    //Determines and sets the correct reusable cell based on the indexPath
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //Declares variables that represent how many title cells/image cells are in the tableview in addition to ingredient and recipe step cells, at specific points

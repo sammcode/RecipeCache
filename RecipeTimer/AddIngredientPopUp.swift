@@ -10,7 +10,7 @@ import UIKit
 import TinyConstraints
 
 protocol AddIngredientDelegate {
-    func buttonTapped()
+    func addIngredientButtonTapped()
 }
 
 class AddIngredientPopUp: UIView {
@@ -90,7 +90,7 @@ class AddIngredientPopUp: UIView {
         ingredient = Ingredient(title: addName.text!, qnty: qnty, notes: notes)
         
         //Call the delegate function that notifies the ViewController presenting the popup to perform some actions
-        ingredientDelegate?.buttonTapped()
+        ingredientDelegate?.addIngredientButtonTapped()
         
         //Dismiss the popup and animate it off screen
         animateOut()
