@@ -36,7 +36,7 @@ class RecipeListVC: UIViewController {
     //Declares the height of the spacing between custom cells
     let cellSpacingHeight: CGFloat = 5
     
-    //Declares the delegate that allows other viewcontroller to communicate with RecipeListVC
+    //Declares the delegate that allows other viewcontrollers to communicate with RecipeListVC
     weak var delegate: RecipeListVCDelegate!
     
     //Declares optional string that stores a multiplier if the user sets one in the previous view
@@ -97,7 +97,7 @@ class RecipeListVC: UIViewController {
         //Sets the title for the view to the title of the recipe
         title = recipe.title
         
-        //Declares the navigatoin bar button items
+        //Declares the navigation bar button items
         let item1 = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTapped))
         let item2 = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(playButtonTapped))
         let item3 = UIBarButtonItem(image: UIImage(systemName: "dial"), style: .plain, target: self, action: #selector(multiplierButtonTapped))
