@@ -85,7 +85,6 @@ class AddMultiplierPopUp: UIView {
         }) { (complete) in
             if complete{
                 self.removeFromSuperview()
-                print("removed from superview")
             }
         }
     }

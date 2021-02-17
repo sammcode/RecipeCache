@@ -190,7 +190,7 @@ class AddPrepStepPopUp: UIView {
             height = ScreenSize.height * 0.6
         }else {
             width = ScreenSize.width * 0.9
-            height = ScreenSize.height * 0.35
+            height = ScreenSize.height * 0.42
         }
         
         //Adds background as a subview. Adds a gesture recognizer that calls the animateOut function if background view is tapped
