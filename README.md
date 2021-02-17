@@ -8,3 +8,5 @@ Settings within the app allow you to decide whether you'd like to organize your 
 able to delay the start of a timer for a cooking step. The UI also supports dark mode, taking advantage of UIKit's systemBackground. 
 
 An update is coming soon that will allow you to share recipes on social media and send them via iMessage.
+
+You can check out screenshots and read more about the app on my website, [here](https://www.sammcgarry.dev/projects/recipecache).
